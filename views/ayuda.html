@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT - Mundo Infantil Terapéutico | Ayuda</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles-ayuda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" href="/img/logo1.jpg" type="/img/logo1.jpg">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/">
+                <img src="/img/logo.jpg" alt="Logo" class="logo">
+            </a>
+            <!-- Botón de hamburguesa -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+            <!-- Lista de navegación -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Página principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/acerca">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/funcionamiento">Funcionamiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/ayuda">Ayuda</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link btn-login" href="/login">Iniciar Sesión</a>
+                    <a class="nav-link btn-register" href="/register">Registrar</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h1>Preguntas Frecuentes</h1>
+                <div class="accordion" id="faqAccordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    ¿Cómo creo una cuenta?  <i class="fas fa-chevron-down ml-2"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p>Para crear una cuenta en nuestra plataforma, sigue estos pasos:</p>
+                                    <ol>
+                                        <li>Haz clic en el botón "Registrar" ubicado en la parte superior derecha de la página principal.</li>
+                                        <li>Ingresa tus datos personales y crea una contraseña.</li>
+                                        <li>Confirma tu cuenta mediante el enlace que se te enviará por correo electrónico</li>
+                                        <li>¡Listo! Ahora puedes iniciar sesión y comenzar a usar nuestra plataforma</li>
+                                    </ol>
+                                    <p>Una vez completado el proceso, tendrás acceso a las funcionalidades básicas de nuestra plataforma.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Cómo accedo a los recursos y herramientas?  <i class="fas fa-chevron-down ml-2"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p>Para acceder a los recursos y herramientas en nuestra plataforma, primero debes registrarte creando una cuenta gratuita. Con tu cuenta registrada, podrás explorar una variedad de recursos y herramientas básicas disponibles para todos los usuarios. Para acceder a contenidos más avanzados y personalizados, así como a herramientas especializadas, necesitarás suscribirte a uno de nuestros planes. Una vez suscrito, obtendrás acceso completo a todos los recursos premium y funciones avanzadas diseñadas para apoyar el desarrollo de tu hijo/a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Cómo puedo contactar a un profesional?  <i class="fas fa-chevron-down ml-2"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p>Para contactar a un profesional en nuestra plataforma, primero debes suscribirte a uno de nuestros planes. Una vez suscrito, podrás acceder a la sección de "Contactar a un Profesional" en el menú principal. Aquí, podrás seleccionar el tipo de profesional que necesitas y agendar una cita a través de nuestro sistema de reservas. Además, tendrás acceso a consultas ilimitadas mediante nuestro chatbot, disponible las 24 horas. Nuestro equipo de profesionales está aquí para apoyarte y guiarte en el desarrollo y bienestar de tu hijo/a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional FAQs -->
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    ¿Cómo acceder a las actividades para mi hijo/a?  <i class="fas fa-chevron-down ml-2"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p>Para acceder a las actividades para tu hijo/a, sigue estos pasos:</p>
+                                <ol>
+                                    <li>Inicia sesión en tu cuenta de Mundo Infantil Terapéutico utilizando tus credenciales.</li>
+                                    <li>Dirígete a la sección de "Actividades" en el menú principal.</li>
+                                    <li>Explora las categorías disponibles según las necesidades de desarrollo de tu hijo/a, como estimulación del lenguaje, habilidades motoras, entre otras.</li>
+                                    <li>Selecciona la actividad que te interese y sigue las instrucciones detalladas proporcionadas para comenzar.</li>
+                                    <li>Si estás registrado pero no suscrito, podrás acceder a un número limitado de actividades. Para desbloquear todo el contenido y acceder a actividades adicionales, considera suscribirte a uno de nuestros planes premium.</li>
+                                </ol>    
+                                <p>Si estás registrado pero no suscrito, podrás acceder a un número limitado de actividades. Para desbloquear todo el contenido y acceder a actividades adicionales, considera suscribirte a uno de nuestros planes premium.</p>   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    ¿Cómo configurar mi perfil y preferencias?  <i class="fas fa-chevron-down ml-2"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p>Para configurar tu perfil y aprovechar al máximo los beneficios de Mundo Infantil Terapéutico, sigue estos pasos:</p>
+                                    <ol>
+                                        <li>Accede a tu cuenta de usuario en la plataforma.</li>
+                                        <li>Selecciona la opción "Perfil" en el menú principal.</li>
+                                        <li>Completa la información de tu perfil personal y de tus hijos, incluyendo nombre, fecha de nacimiento, y cualquier detalle relevante para el desarrollo.</li>
+                                        <li>Crea y gestiona perfiles de hasta 3 niños, evaluando el progreso en 5 áreas de desarrollo diferentes, con 10 hitos por área.</li>                                       
+                                        <li>Revisa la evaluación del desarrollo para recibir un informe básico indicando si tu hijo/a está avanzando o tiene algún retraso.</li>
+                                        <li>Recibe consejos y actividades básicas basadas en el progreso de tu hijo/a.</li>
+                                        <li>Actualiza a un plan premium para obtener acceso total a todas las actividades y programar citas con terapeutas para orientación personalizada.</li>
+                                    </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    ¿Qué hacer si olvidé mi contraseña?  <i class="fas fa-chevron-down ml-2"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p>Si olvidaste tu contraseña, sigue estos pasos para recuperarla de manera rápida y segura utilizando un token:</p>
+                                <ol>
+                                    <li>Ve a la página de inicio de sesión de Mundo Infantil Terapéutico.</li>
+                                    <li>Haz clic en "¿Olvidaste tu contraseña?", ubicado justo debajo del campo de ingreso de contraseña.</li>
+                                    <li>Ingresa la dirección de correo electrónico asociada a tu cuenta y haz clic en "Enviar".</li>
+                                    <li>Revisa tu correo electrónico y busca un mensaje de Mundo Infantil Terapéutico con el asunto "Restablecer contraseña".</li>
+                                    <li>Dentro del correo, encontrarás un token de recuperación. Copia el token proporcionado.</li>
+                                    <li>Vuelve a la página de recuperación de contraseña en nuestra plataforma y pega el token en el campo designado.</li>
+                                </ol>
+                                <p>Sigue las instrucciones para crear una nueva contraseña. Asegúrate de que la nueva contraseña sea segura y fácil de recordar.
+                                    Inicia sesión con tu nueva contraseña y disfruta de nuevo acceso a todos los recursos y herramientas de nuestra plataforma.
+                                    Si no recibes el correo electrónico en unos minutos, verifica tu carpeta de spam o contacta a nuestro equipo de soporte para asistencia adicional.</p>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    ¿Cómo obtener ayuda adicional si tengo problemas técnicos?  <i class="fas fa-chevron-down ml-2"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p>Para obtener ayuda adicional si tienes algún problema, sigue estos pasos:</p>
+                                    <ol>
+                                        <li>Visita la sección de Soporte Técnico en nuestra plataforma.</li>
+                                        <li>Completa el formulario de contacto con los detalles de tu problema. Asegúrate de proporcionar toda la información relevante para que podamos asistirte de manera efectiva.</li>
+                                        <li>Envía el formulario y nuestro equipo de soporte se pondrá en contacto contigo lo antes posible para ayudarte a resolver tu problema.</li>
+                                    </ol>
+                                    <p>Debajo de las preguntas frecuentes, encontrarás el formulario de contacto para soporte, donde podrás describir tu problema y ser contactado directamente por nuestro equipo de soporte.</p>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <h2>Soporte Técnico</h2>
+                <h3>Contacto</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" placeholder="Escriba su mensaje aquí"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer -->
+   <footer class="bg-dark text-white text-center">
+    <div class="container">
+      <p>&copy; 2024 MIT - Mundo Infantil Terapéutico. Todos los derechos reservados.</p>
+      <p>
+        <a href="/" class="text-white">Página principal</a> |
+        <a href="/acerca" class="text-white">Acerca de</a> |
+        <a href="/funcionamiento" class="text-white">Funcionamiento</a> |
+        <a href="/ayuda" class="text-white">Ayuda</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

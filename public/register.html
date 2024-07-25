@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar - Mundo Infantil Terapeutico</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles-register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="register-page">
+        <div class="left-section">
+            <div class="overlay">
+                <h1>Mundo Infantil Terapeutico</h1>
+                <p>Estamos encantados de tenerte aquí. En nuestra plataforma, proporcionamos herramientas y recursos para apoyar el desarrollo y bienestar de los niños, adaptados a sus necesidades únicas.</p>
+                <p>Regístrate para empezar a acceder a actividades educativas, monitorear el progreso de tu hijo y conectar con una comunidad de apoyo. Si ya tienes una cuenta, ¡te invitamos a iniciar sesión!</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="register-box">
+                <h1>Crear Cuenta</h1>
+                <form id="register-form">
+                    <div class="textbox">
+                        <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="textbox password-wrapper">
+                        <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                        <span class="toggle-password" onclick="togglePasswordVisibility('password')">
+                            <i id="eye-icon-password" class="fas fa-eye"></i>
+                        </span>
+                    </div>
+                    <div class="textbox password-wrapper">
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmar Contraseña" required>
+                        <span class="toggle-password" onclick="togglePasswordVisibility('confirm-password')">
+                            <i id="eye-icon-confirm-password" class="fas fa-eye"></i>
+                        </span>
+                        <span id="password-error" class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                    <div class="divider">o</div>
+                    <button type="button" class="btn btn-google" onclick="window.location.href='/home.html'">
+                        <i class="fab fa-google"></i> Registrarse con Google
+                    </button>
+                </form>
+                <p class="register-link">¿Ya tienes una cuenta? <a href="/login">Inicia sesión aquí</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="/js/register.js"></script>
+</body>
+</html>

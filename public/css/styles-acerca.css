@@ -1,0 +1,204 @@
+/* about.css */
+
+
+/* Estilo para la sección Acerca de */
+.acerca {
+    padding: 2rem 0;
+    background-color: #f9f9f9; /* Fondo claro para contrastar con el contenido */
+    text-align: justify;
+
+  }
+  
+  .acerca h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+   h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #004080; /* Dark Blue */
+    text-align: center;
+  }
+  
+  .acerca h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .acerca p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .acerca img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .funcionamiento {
+    background-color: #ccc;
+    
+  }
+  
+  /* Estilo para la sección Beneficios */
+.beneficios {
+  background-color: #f4f4f4; /* Color de fondo claro para un diseño limpio */
+  padding: 4rem 0;
+}
+
+.beneficios h2 {
+  font-size: 2.5rem;
+  color: #004080; /* Dark Blue */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+  
+  .beneficio-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ajusta el contenido dentro de la tarjeta */
+    height: 400px; /* Altura fija para uniformidad */
+    width: 100%; /* Asegura que ocupen el ancho completo disponible */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+    margin-bottom: 2em;
+    transition: transform 0.3s ease;
+
+  }
+
+  .beneficio-item:hover {
+    transform: scale(1.05);
+  }
+
+  .beneficio-item img {
+    max-width: 80%;
+    height: 50%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .beneficio-icon {
+    width: 100%;
+    max-width: 150px; /* Tamaño ajustado para mantener proporciones */
+    height: 150px; /* Altura fija para uniformidad */
+    object-fit: cover; /* Asegura que la imagen se recorte de manera uniforme */
+    margin-bottom: 1rem;
+  }
+  
+  .beneficio-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+ 
+
+  .beneficio-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .funcionamiento h3{
+    text-align: center;
+  }
+
+ .acerca .img-fluid {
+  margin-bottom: 10px;
+ }
+  
+ .acerca h1 , .beneficios h2, .funcionamiento h2{
+  font-weight: bold;
+  color: #004080;
+
+ }
+/* Estilo para la sección Misión y Visión */
+.mision-vision {
+  background-color: #55a0c0;
+  padding: 2rem 0;
+}
+
+.mision-vision h2 {
+  font-size: 2rem;
+  color: #004080; /* Dark Blue */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.mision-vision p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+ /* Estilo para la sección Cómo Funciona */
+.funcionamiento {
+  background-color: #f9f9f9; /* Misma que Acerca de */
+  padding: 2rem 0;
+}
+
+.funcionamiento h2 {
+  font-size: 2.5rem;
+  color: #004080; /* Dark Blue */
+  margin-bottom: 1.5rem;
+}
+
+.funcionamiento .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.funcionamiento i {
+  margin-bottom: 1rem;
+}
+
+.funcionamiento p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+}
+/* Responsividad */
+@media (max-width: 768px) {
+  .acerca {
+    padding: 2rem 1rem;
+  }
+  .beneficio-item {
+    height: auto; /* Ajusta la altura en pantallas más pequeñas */
+  }
+
+  .beneficio-icon {
+    max-width: 120px; /* Tamaño ajustado para pantallas pequeñas */
+    height: 120px; /* Altura ajustada para pantallas pequeñas */
+  }
+  .mision-vision {
+    padding: 2rem 1rem;
+  }
+
+  .funcionamiento {
+    padding: 2rem 1rem;
+  }
+ 
+  .beneficio-item img {
+    max-width: 100%;
+    height: auto;
+   
+  }
+  .beneficio-item {
+    margin-bottom: 1.5rem;
+    max-width: 80%;
+    margin-left: 40px;
+  }
+  }
+

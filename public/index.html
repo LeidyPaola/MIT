@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIT - Mundo Infantil Terapéutico</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
+  <link rel="icon" href="img/logo1.jpg" type="img/logo1.jpg">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <!-- Logo -->
+      <a class="navbar-brand" href="/">
+        <img src="img/logo.jpg" alt="Logo" class="logo">
+      </a>
+      <!-- Botón de hamburguesa -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Lista de navegación -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Página principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/acerca">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/funcionamiento">Funcionamiento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ayuda">Ayuda</a>
+          </li>
+        </ul>
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link btn-login" href="/login">Iniciar Sesión</a>
+          <a class="nav-link btn-register" href="/register">Registrar</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+<main>
+  <!-- Hero Section -->
+  <section class="hero text-center text-white">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1 class="display-4">Bienvenido a MIT</h1>
+        <p class="lead">Estamos aquí para apoyarte en el emocionante viaje de estimular el desarrollo de tu hijo.
+          Apoya el desarrollo de tu hijo desde casa con actividades personalizadas, asesoramiento virtual y una comunidad de apoyo. ¡Juntos lograremos grandes avances!
+        </p>
+        <a href="/acerca" class="btn btn-primary btn-lg">Saber más</a>
+      </div>
+    </div>
+  </section>
+
+<!-- About Section -->
+<section class="about-section py-5 text-center">
+  <div class="container">
+    <h2 class="display-4 font-weight-bold mb-4">¿Qué es MIT?</h2>
+    <p class="lead mb-5">MIT (Mundo Infantil Terapéutico) es una plataforma integral diseñada para apoyar a padres con niños en desarrollo y neurodivergencias. Ofrecemos una gama de herramientas y recursos innovadores para fomentar el progreso y el bienestar infantil. Con la ayuda de profesionales y tecnologías avanzadas, nuestro objetivo es proporcionar un apoyo personalizado y accesible para cada familia.</p>
+    <img src="img/about-img.jpg" alt="Sobre MIT" class="img-fluid rounded shadow-lg">
+  </div>
+</section>
+
+
+  <!-- Features Section -->
+  <section class="features text-center">
+    <div class="container">
+      <h2>¿Qué ofrecemos?</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fas fa-chalkboard-teacher fa-3x"></i>
+          <h3>Juegos Interactivos</h3>
+          <p>Actividades lúdicas diseñadas para estimular el desarrollo infantil.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-brain fa-3x"></i>
+          <h3>Asesoría Profesional</h3>
+          <p>Consulta con terapeutas especializados para un seguimiento personalizado.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-download fa-3x"></i>
+          <h3>Material Descargable</h3>
+          <p>Recursos educativos y actividades imprimibles para trabajar en casa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Call to Action Section -->
+<section class="cta text-center">
+  <div class="container">
+    <h2>¡Únete a Nosotros Hoy Mismo!</h2>
+    <p>Empieza a apoyar el desarrollo de tu hijo con recursos personalizados y el respaldo de profesionales. Elige el plan que mejor se adapte a tus necesidades y aprovecha todos los beneficios que MIT ofrece.</p>
+    
+    <div class="cta-cards">
+      <div class="card plan-card">
+        <div class="card-body">
+          <h3 class="card-title">Plan Gratuito</h3>
+          <p class="price">0 COP / mes</p>
+          <ul class="card-list">
+            <li>Acceso a recursos básicos</li>
+            <li>Material educativo limitado</li>
+            <li>Consultas generales</li>
+          </ul>
+          <a href="/register" class="btn btn-outline-primary">Regístrate Gratis</a>
+        </div>
+      </div>
+      <div class="card plan-card">
+        <div class="card-body">
+          <h3 class="card-title">Plan Premium</h3>
+          <p class="price">30.000 COP / mes</p>
+          <ul class="card-list">
+            <li>Acceso completo a todos los recursos</li>
+            <li>Material educativo ilimitado</li>
+            <li>Consultas personalizadas con terapeutas</li>
+            <li>Acceso a foros y sesiones exclusivas</li>
+          </ul>
+          <a href="/register" class="btn btn-primary">Únete Ahora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Testimonials Section -->
+<!-- Testimonios -->
+<section class="testimonials text-center">
+  <div class="container">
+    <h2>Opiniones Generales</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="testimonial">
+          <p class="text">"Las plataformas de apoyo a padres son esenciales para el desarrollo infantil. Esperamos que MIT haga una gran diferencia."</p>
+          <p class="name">Expertos en Desarrollo Infantil</p>
+          <div class="stars">
+            ★★★★★
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <p class="text">"Un recurso integral que ayudará a muchas familias a obtener el apoyo que necesitan para el desarrollo de sus hijos."</p>
+          <p class="name">Educadores y Psicólogos</p>
+          <div class="stars">
+            ★★★★☆
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <p class="text">"La integración de tecnología y apoyo profesional en una sola plataforma es una gran innovación para el apoyo parental."</p>
+          <p class="name">Profesionales de la Salud Infantil</p>
+          <div class="stars">
+            ★★★★★
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center">
+      <div class="container">
+        <p>&copy; 2024 MIT - Mundo Infantil Terapéutico. Todos los derechos reservados.</p>
+        <p>
+          <a href="/" class="text-white">Página principal</a> |
+          <a href="/acerca" class="text-white">Acerca de</a> |
+          <a href="/funcionamiento" class="text-white">Funcionamiento</a> |
+          <a href="/ayuda" class="text-white">Ayuda</a>
+        </p>
+      </div>
+    </footer>
+
+</body>
+</html>

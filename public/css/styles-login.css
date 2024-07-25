@@ -1,0 +1,189 @@
+/* styles-login.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-page {
+    display: flex;
+    height: 100vh;
+}
+
+.left-section {
+    flex: 1;
+    position: relative; /* Añadido para que el overlay se posicione correctamente dentro de esta sección */
+    background: url('/img/login.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 2em;
+}
+
+.overlay {
+    position: absolute; /* Posiciona el overlay sobre la imagen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border-radius: 8px;
+    text-align: center;
+    display: block; /* Centra el contenido dentro del overlay */
+    justify-content: center;
+    align-items: center;
+    padding: 2em; /* Asegura que haya espacio alrededor del contenido */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del overlay */
+}
+
+.left-section h1 {
+    
+    padding-top: 25%;
+    font-size: 3rem; /* Tamaño del texto del título */
+    font-weight: bold; /* Hace que el título sea más prominente */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombra al texto para mejor contraste */
+}
+
+.left-section p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.left-section h3 {
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 1em;
+    color: #004080;
+    font-size: 1.8em;
+}
+
+.textbox {
+    margin-bottom: 1.5em;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.textbox input:focus {
+    border-color: #004080;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.75em;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5em;
+}
+
+.btn-primary {
+    background-color: #004080;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: #004080;
+    margin-right: 0.5rem;
+    border: #004080 solid 1px;
+  }
+   .btn-google:hover {
+    background-color: transparent;
+    color: #db4437;
+    margin-right: 0.5rem;
+    border: #db4437 solid 1px;
+  }
+
+.btn-google {
+    background-color: #db4437;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.btn-google i {
+    font-size: 1.2em;
+}
+
+
+
+.divider {
+    margin: 1.5em 0;
+    font-size: 1em;
+    color: #aaa;
+}
+
+.register-link {
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+.register-link a {
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+ 
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .login-page {
+        flex-direction: column;
+    }
+
+    .left-section {
+        display: none;
+    }
+
+   
+    .right-section {
+        height: 50vh;
+    }
+
+    
+    
+}

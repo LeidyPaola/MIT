@@ -1,0 +1,139 @@
+/* General Styles */
+h1, h2, h5 {
+  color: #004080; /* Dark Blue */
+  text-align: center;
+  margin: 0; /* Elimina márgenes adicionales en los títulos */
+}
+
+/* Main Content */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem; /* Añade un poco de padding en pantallas pequeñas */
+}
+
+/* Sección de Descripción General */
+.descripcion {
+  padding: 2rem 0;
+  background-color: #f9f9f9; /* Color de fondo suave */
+}
+.descripcion h1 {
+  font-weight: bold;
+}
+
+.descripcion p {
+  font-size: 1.2rem;
+}
+.descripcion img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Sección de Funcionalidades */
+.funcionalidades {
+  padding: 2rem 0;
+  background-color: #ededed; /* Color de fondo blanco */
+}
+
+.funcionalidades h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.card {
+  background: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ajusta el contenido dentro de la tarjeta */
+    height: 500px; /* Altura fija para uniformidad */
+    width: 100%; /* Asegura que ocupen el ancho completo disponible */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+    margin-top: 2em;
+    transition: transform 0.3s ease;
+    border-radius: 10px !important;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 90%;
+  height: 200px;
+}
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  .descripcion h1 {
+    font-size: 2em;
+  }
+
+  .descripcion h2 {
+    font-size: 1.8em;
+    margin-top: 10px;
+
+  }
+
+  .descripcion p {
+    font-size: 1.2em;
+    margin: 0 15px;
+    text-align: justify;
+  }
+
+  .descripcion img {
+    margin: 10px 40px;
+  }
+
+  .row {
+    flex-direction: column-reverse; /* Cambia la dirección de las columnas en pantallas pequeñas */
+  }
+
+  .col-md-6 {
+    width: 100%; /* Asegura que las columnas ocupen el ancho completo en pantallas pequeñas */
+  }
+
+
+  .card {
+    height: auto; /* Ajusta la altura en pantallas más pequeñas */
+    margin: 0 40px;
+    width: 80%;
+  }
+
+  .card img {
+    height: auto; /* Ajusta la altura en pantallas más pequeñas */
+    width: 80%;
+  }
+
+
+
+  .funcionalidades h2 {
+    font-size: 2em;
+    
+  }
+}

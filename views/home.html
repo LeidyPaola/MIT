@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/public/css/styles-home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/public/js/script.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="/">
+                <img src="/public/img/logo.jpg" alt="Logo" class="logo">
+            </a>
+            <!-- Botón de hamburguesa -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/hitos">Hitos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Recursos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <a class="dropdown-item" href="/terapias">Terapias</a>
+                            <a class="dropdown-item" href="/guias">Guías</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="activitiesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Actividades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="activitiesDropdown">
+                            <a class="dropdown-item" href="/actividades/0-1">Niños de 0 a 1 año</a>
+                            <a class="dropdown-item" href="/actividades/1-2">Niños de 1 a 2 años</a>
+                            <a class="dropdown-item" href="/actividades/2-3">Niños de 2 a 3 años</a>
+                            <a class="dropdown-item" href="/actividades/3-5">Niños de 3 a 5 años</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tienda">Tienda</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" action="/search" method="get">
+                    <input class="form-control mr-sm-2 search-bar" type="search" name="query" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+                <div class="navbar-nav ml-auto">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="/public/img/user-icon.png" alt="User Photo" class="user-photo">
+                            Nombre de Usuario
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="/perfil">Editar Perfil</a>
+                            <a class="dropdown-item" href="/logout">Cerrar Sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    
+
+   
+    <main>
+    
+
+   
+<section id="introduccion" class="introduccion">
+    <div class="row justify-content-center">
+        <div class="col-md-8 form-container3">
+        <h1 style="color: blue" id="bienvenida-text" class="animate__animated animate__fadeInLeft"><b>Bienvenido a Mundo Infantil Terapéutico</b></h1><br>
+            <h3>Donde nos preocupamos por la salud y el desarrollo integral de los niños.</h3><br>
+            <h2><b>Introducción</b></h2>
+            <h4>Bienvenido a Mundo Infantil Terapéutico, donde nos dedicamos a estimular el desarrollo integral de los niños en su etapa temprana, centrándonos en el crecimiento cognitivo, emocional y lingüístico de aquellos que enfrentan desafíos en su desarrollo. Nuestra plataforma ofrece recursos educativos y terapéuticos especializados, adaptados a las necesidades únicas de cada niño, respaldados por una metodología innovadora y adaptativa. Con acceso remoto y un chatbot de IA disponible las 24 horas, brindamos apoyo continuo y orientación sobre neurodivergencias, actividades y más, en un entorno inclusivo que valora la diversidad y la colaboración con profesionales de la salud y familias para crear un futuro brillante para nuestros pequeños.</h4>
+                
+        </div>
+    </div>
+   
+</section>
+
+<section id="neurodivergencias" class="neurodivergencias">
+    <div class="row justify-content-center">
+        <div class="col-md-8 form-container4">
+        <h2><b>¿Qué son las Neurodivergencias?</b></h2>
+        <h4>Las neurodivergencias son variaciones en la función cerebral que afectan la forma en que una persona percibe, piensa, 
+            se comporta y se relaciona con los demás. En niños de primera infancia, estas variaciones pueden manifestarse de diversas formas 
+            y pueden incluir condiciones como el Trastorno del Espectro Autista (TEA), TDAH (Trastorno por Déficit de Atención e Hiperactividad), 
+            dislexia, entre otras.</h4>
+            <div class="d-flex justify-content-between">
+                <img src="/public/img/introduccion.jpg" alt="Recursos Educativos" class="img-fluid">
+                <img src="/public/img/introduccion1.jpg" alt="Recursos Educativos" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="condiciones" class="condiciones">
+    <div class="container container-condiciones">
+            <div class="row justify-content-center">
+                <br><br>
+            <h2>Las neurodivergencias en niños de primera infancia abarcan una amplia gama de condiciones
+                        que afectan el desarrollo neurológico y el comportamiento. Aquí te presento algunas de las neurodivergencias más conocidas en esta etapa:</h2>
+                
+                <br>
+            <div class="row justify-content-center">
+                <div class="col-md-6 linea">
+                    <h3 style="color: black"><b>Trastorno del Espectro Autista (TEA):</b></h3>
+                    <h4>El TEA es una condición que afecta la comunicación, las habilidades sociales y el comportamiento de manera variable.
+                        Los niños con TEA pueden tener dificultades para comunicarse verbalmente, presentar intereses restringidos y comportamientos repetitivos, así como desafíos
+                        en la interacción social y la comprensión de las emociones de los demás.</h4>
+                </div>
+                <div class="col-md-6">
+                    <img src="/public/img/tea.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 linea">
+                    <img src="/public/img/tdha.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+                <div class="col-md-6 ">
+                    <h3><b>Trastorno por Déficit de Atención e Hiperactividad (TDAH):</b></h3>
+                    <h4>El TDAH se caracteriza por dificultades en la atención, la impulsividad y la hiperactividad. Los niños con TDAH pueden tener problemas para mantener la concentración, 
+                        seguir instrucciones, controlar sus impulsos y regular su actividad motora.</h4>
+                </div>
+                
+            </div>
+            
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 linea">
+                    <h3><b>Dislexia:</b></h3>
+                    <h4>La dislexia es un trastorno del aprendizaje que afecta la lectura y la escritura. Los niños con dislexia pueden tener dificultades para reconocer y comprender palabras, deletrear correctamente, y pueden presentar lentitud en la lectura y la escritura.</h4>
+                </div>
+                <div class="col-md-6">
+                    <img src="/public/img/dislexia.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 linea">
+                    <img src="/public/img/tel.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+                <div class="col-md-6 ">
+                    <h3><b>Trastorno Específico del Lenguaje (TEL):</b></h3>
+                    <h4>El Trastorno Específico del Lenguaje implica dificultades específicas en la adquisición y uso del lenguaje, sin otros retrasos en el desarrollo. Los niños con TEL pueden tener dificultades para expresarse verbalmente, comprender el lenguaje hablado y seguir instrucciones complejas, necesitando intervenciones terapéuticas para mejorar sus habilidades comunicativas.</h4>
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+            <div class="col-md-6 linea">
+                    <h3><b>Trastorno del Desarrollo del Lenguaje:</b></h3>
+                    <h4>Este trastorno afecta la adquisición y el desarrollo del lenguaje. Los niños con este trastorno pueden tener dificultades para expresarse verbalmente, comprender el lenguaje hablado, seguir instrucciones complejas y desarrollar un vocabulario adecuado para su edad.</h4>
+                </div>
+                <div class="col-md-6">
+                    <img src="/public/img/tdl.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 linea">
+                    <img src="/public/img/teoc.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+                <div class="col-md-6 ">
+                    <h3><b>Trastorno del Espectro Obsesivo-Compulsivo (TEOC):</b></h3>
+                    <h4>ambién conocido como Trastorno Obsesivo-Compulsivo (TOC) en la infancia, se caracteriza por pensamientos obsesivos y comportamientos compulsivos. Los niños con TEOC pueden tener preocupaciones recurrentes y rituales compulsivos que afectan su funcionamiento diario.</h4>
+                </div>
+                
+            </div>
+            
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 linea">
+                    <h3><b>Trastorno del Espectro del Déficit de Atención y del Aprendizaje (TEDA):</b></h3>
+                    <h4>Este trastorno implica dificultades en la atención, el aprendizaje y el funcionamiento ejecutivo. Los niños con TEDA pueden tener
+                         dificultades en la organización, la planificación, la memoria de trabajo y la autorregulación emocional.<h4>
+
+                    <h4>Es importante recordar que cada niño es único y puede presentar una combinación única de características y desafíos. Estas neurodivergencias 
+                    requieren evaluación y diagnóstico por parte de profesionales de la salud especializados para brindar intervenciones y apoyos adecuados a cada niño según
+                    sus necesidades individuales.</h4>
+                </div>
+                <div class="col-md-6">
+                    <img src="/public/img/tda.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 linea">
+                    <img src="/public/img/sd.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+                <div class="col-md-6 ">
+                    <h3><b>Síndrome de Down: </b></h3>
+                    <h4>El Síndrome de Down es una condición genética que causa retraso en el desarrollo intelectual y físico, junto con rasgos faciales característicos. Los niños con Síndrome de Down pueden enfrentar desafíos en áreas como el habla, la movilidad y el aprendizaje, requiriendo apoyos específicos para alcanzar su máximo potencial.</h4>
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+            <div class="col-md-6 linea">
+                    <h3><b>Discalculia:</b></h3>
+                    <h4>La discalculia es una dificultad específica para comprender y trabajar con números, afectando la habilidad para aprender matemáticas. Los niños con discalculia pueden tener dificultades para entender conceptos numéricos, realizar cálculos y comprender patrones matemáticos, lo que puede afectar su desempeño académico y su confianza en sí mismos.</h4>
+                </div>
+                <div class="col-md-6">
+                    <img src="/public/img/discalculia.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 linea">
+                    <img src="/public/img/discapacidad_motora.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+                <div class="col-md-6 ">
+                    <h3><b>Discapacidad Motora: </b></h3>
+                    <h4>La discapacidad motora implica dificultades en la movilidad y el control muscular, afectando la coordinación y el equilibrio. Los niños con discapacidad motora pueden tener dificultades para caminar, manipular objetos o realizar actividades motoras finas, lo que puede requerir terapias especializadas y adaptaciones en el entorno para apoyar su desarrollo.</h4>
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+            <div class="col-md-6 linea">
+                    <h3><b>Discapacidad Sensorial Auditiva/Visual:</b></h3>
+                    <h4>Las discapacidades sensoriales auditivas o visuales implican problemas en la audición o visión que afectan la percepción sensorial y la comunicación. Los niños con discapacidad sensorial auditiva pueden enfrentar dificultades para escuchar sonidos o seguir conversaciones, mientras que aquellos con discapacidad sensorial visual pueden tener dificultades para ver claramente o interpretar información visual, necesitando apoyos específicos para desarrollar habilidades adaptativas y comunicativas.</h4>
+                </div>
+                <div class="col-md-6">
+                    <img src="/public/img/discapacidad_auditiva_visual.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 linea">
+                    <img src="/public/img/paralisis_cerebral.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+                <div class="col-md-6 ">
+                    <h3><b>Parálisis Cerebral:  </b></h3>
+                    <h4>La parálisis cerebral es una afección que afecta el movimiento y la postura debido a daño cerebral durante el desarrollo. Los niños con parálisis cerebral pueden experimentar dificultades en la movilidad, el control muscular y la coordinación, requiriendo terapias físicas y ocupacionales para mejorar su funcionalidad y calidad de vida.</h4>
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+            <div class="col-md-6 linea">
+                    <h3><b>Retraso Madurativo:</b></h3>
+                    <h4>El retraso madurativo implica un retraso en el desarrollo de habilidades motoras, cognitivas y sociales, a menudo superado con el tiempo y el apoyo adecuado. Los niños con retraso madurativo pueden necesitar intervenciones tempranas, terapias especializadas y apoyos educativos para alcanzar hitos del desarrollo y participar plenamente en actividades cotidianas.</h4>
+                </div>
+                <div class="col-md-6">
+                    <img src="/public/img/retraso_madurativo.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 linea">
+                    <img src="/public/img/sindrome_asperger.jpg" alt="Descipcion" class="img-fluid">
+                </div>
+                <div class="col-md-6 ">
+                    <h3><b>Síndrome de Asperger:  </b></h3>
+                    <h4>El Síndrome de Asperger es una forma de TEA con dificultades en la interacción social y patrones de comportamiento repetitivos, pero sin retrasos significativos en el lenguaje o la cognición. Los niños con Síndrome de Asperger pueden tener intereses intensos en áreas específicas y dificultades para entender las emociones sociales, requiriendo estrategias de apoyo y comprensión del entorno social.</h4>
+                </div>
+                
+            </div>
+            <hr>
+            <hr>
+            
+            </div></div>        
+        
+          
+
+    </section>
+    
+    <div class="medico-container">
+    <div class="chatbot-buttons">
+        <button id="chatbot-start-btn" class="chatbot-start-btn" onclick="startChatbot()">¿Quieres chatear con MIT?</button>
+        <button class="chatbot-close-btn" id="medico-close-btn" onclick="closeMedico()">
+            <span>&times;</span>
+        </button>
+    </div>
+    <img src="/public/img/imagen-medico.gif" alt="Imagen de médico" class="medico-img">
+</div>
+
+<!-- Contenedor para el iframe del chatbot -->
+<div id="chatbot-iframe-container">
+    <button class="iframe-close-btn" id="iframe-close-btn" onclick="closeChatbot()">
+        <span>&times;</span>
+    </button>
+    <iframe id="chatbot-iframe" src="" frameborder="0"></iframe>
+</div>
+
+
+            </main>
+            <footer class="text-center py-4  text-white">
+        <h6>&copy; <?php echo date('Y'); ?> Mundo Infantil Terapéutico</h6>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding-top: 70px; /* Ajusta este valor según la altura de tu navbar */
+}
+
+
+
+/* Header Styles */
+header {
+    background-color: #003366; /* Dark blue color for the header */
+}
+
+
+
+/* Asegura que la barra de navegación esté fija en la parte superior */
+.navbar {
+    background-color: #003366;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* Asegúrate de que esté por encima de otros elementos */
+    
+}
+
+
+/* Estilos para el botón de hamburguesa */
+.navbar-toggler {
+    border: none; /* Elimina el borde del botón de hamburguesa */
+    background: transparent; /* Fondo transparente */
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar .navbar-brand .logo {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+    max-height: 50px; /* Limita la altura máxima */
+    border-radius: 50%; /* Logo circular */
+    object-fit: cover;
+}
+
+.navbar-nav .nav-item .user-photo {
+    width: 40px; /* Ajusta según el tamaño deseado */
+    height: 40px; /* Ajusta según el tamaño deseado */
+    border-radius: 50%; /* Hacer que el icono sea circular */
+    object-fit: cover;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+.nav-link {
+    color: #ffffff !important;
+}
+.nav-link:hover {
+  border-bottom: 2px solid #fff;
+  color: #ccc !important;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #0daac2;
+
+}
+
+.user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ffffff;
+}
+.dropdown-menu {
+    background-color: #003366;
+    border: none;
+}
+.dropdown-item {
+    color: #ffffff;
+}
+.dropdown-item:hover {
+    background-color: #004080;
+}
+.search-bar {
+    border-radius: 20px; /* Bordes redondeados para la barra de búsqueda */
+    padding: 0.5rem 1rem; /* Espaciado interno de la barra de búsqueda */
+    border: 1px solid #ccc; /* Borde de la barra de búsqueda */
+}
+.form-inline .btn {
+    border-radius: 20px; /* Bordes redondeados para el botón */
+    padding: 0.5rem 1rem; /* Espaciado interno del botón */
+    border: 1px solid #fff; /* Borde blanco para el botón */
+    color: #fff; /* Color del texto del botón */
+    background-color: transparent; /* Fondo transparente del botón */
+}
+
+
+
+.form-inline .btn:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+
+
+
+
+
+
+
+
+/* Main Section Styles */
+.introduccion, .neurodivergencias, .condiciones {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.introduccion {
+    background-color: #e6f7ff; /* Light blue background */
+}
+
+.introduccion h1 {
+    color: #003366; /* Dark blue color for the heading */
+}
+
+.introduccion h3 {
+    color: #666;
+}
+
+.neurodivergencias, .condiciones {
+    background-color: #ffffff;
+}
+
+.neurodivergencias h2, .condiciones h2 {
+    color: #003366;
+}
+
+.neurodivergencias h4, .condiciones h4 {
+    color: #666;
+}
+
+.img-fluid {
+    border-radius: 8px;
+}
+
+/* Linea Styles */
+.linea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+/* Chatbot Button Styles */
+.medico-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chatbot-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chatbot-start-btn {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chatbot-start-btn:hover {
+    background-color: #002244;
+}
+
+.chatbot-close-btn {
+    background-color: #ffffff;
+    color: #003366;
+    border: 1px solid #003366;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.chatbot-close-btn:hover {
+    background-color: #f4f4f4;
+}
+
+.medico-img {
+    max-width: 100px;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+
+    }
+
+    .navbar-nav .nav-link {
+        margin: 10px 0;
+    }
+
+    .form-inline .btn {
+        margin-left: 140px;
+    }
+    
+    
+    
+}

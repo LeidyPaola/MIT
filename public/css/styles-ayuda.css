@@ -1,0 +1,89 @@
+/* CSS base */
+
+.faq-section {
+    padding: 2em;
+}
+
+.faq-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #004080; /* Dark Blue */
+    text-align: center;
+    font-weight: bold;
+}
+
+.faq-section h2 {
+    text-align: center;
+
+}
+
+.faq-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Main Content */
+ .contact-section {
+    padding: 60px 0;
+}
+
+.faq-section .card {
+    margin-bottom: 20px;
+}
+
+.faq-section .card-header {
+    background-color: #f8f9fa;
+}
+
+.faq-section .btn-link {
+    text-decoration: none !important;
+    font-weight: bold;
+    font-size: 0.6em;
+    color: #298bed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.faq-section .btn-link.collapsed .fas {
+    transform: rotate(-90deg); /* Rotación para el ícono de la flecha hacia arriba */
+}
+
+.contact-section .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-section .btn-primary {
+    background-color: #004080;
+    border: none;
+    font-size: 1.1em;
+    margin-left: 50%;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #003366;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 20px;
+
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .btn-link {
+        font-size: 1em;
+    }
+}
