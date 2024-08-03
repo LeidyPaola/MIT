@@ -1,0 +1,163 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Contenedor del foro */
+  .forum-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tema del foro */
+  .forum-topic {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forum-topic h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #337ab7;
+  }
+  
+  .forum-topic p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .forum-topic-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .forum-topic-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .forum-topic-author span {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .forum-topic-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .forum-topic-stats {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .forum-topic-stats span {
+    margin-right: 20px;
+  }
+  
+  /* Respuesta del foro */
+  .forum-response {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forum-response h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #337ab7;
+  }
+  
+  .forum-response p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .forum-response-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .forum-response-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .forum-response-author span {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .forum-response-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Formulario de respuesta */
+  .forum-form {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forum-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+  }
+  
+  .forum-form button[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .forum-form button[type="submit"]:hover {
+    background-color: #23527c;
+  }
+  
+  /* Botones del foro */
+  .forum-button {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .forum-button:hover {
+    background-color: #23527c;
+  }

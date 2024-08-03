@@ -1,0 +1,354 @@
+ /* Aplicar fuente global */
+body {
+    font-family: 'Roboto', sans-serif; /* Cambia 'Roboto' por el nombre de la fuente que hayas elegido */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 70px; /* Ajusta este valor según la altura de tu navbar */
+
+  }
+
+
+  /* Hero Section */
+.hero {
+    position: relative ;
+    background: url('../img/hero-img.jpg') no-repeat center center/cover; /* Imagen de fondo */
+    color: #fff;
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  
+  .hero-overlay {
+    position: absolute; /* Asegura que el overlay cubra toda la sección */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1; /* Asegura que el overlay esté sobre la imagen */
+  }
+  
+  .hero-content {
+    position: relative; /* Asegura que el contenido esté encima del overlay */
+    z-index: 2; /* Asegura que el contenido esté por encima del overlay */
+    color: #fff; /* Asegura que el texto sea blanco */
+    padding: 0 15px;
+  }
+  
+  .hero h1 {
+    font-size: 4rem; /* Tamaño del texto del título */
+    font-weight: bold; /* Hace que el título sea más prominente */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombra al texto para mejor contraste */
+  }
+  
+  .hero p {
+    font-size: 1.5rem; /* Tamaño del texto del párrafo */
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Agrega sombra al texto para mejor contraste */
+  }
+  
+  .hero .btn {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+  }
+  
+  
+  /* About Section Styles */
+.about-section {
+  background-color: #ededed; /* Light grey background for contrast */
+  color: #333; /* Darker text color for readability */
+}
+
+.about-section .container {
+  max-width: 900px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center the container */
+}
+
+.about-section h2 {
+  font-size: 2rem; /* Larger font size for heading */
+  font-weight: 700; /* Bold heading */
+  color: #004080; /* Dark blue color for heading */
+}
+
+.about-section p {
+  font-size: 1.25rem; /* Larger font size for paragraph */
+  line-height: 1.6; /* Better line spacing for readability */
+  color: #555; /* Slightly lighter text color for paragraph */
+  margin-bottom: 2rem; /* Space below the paragraph */
+}
+
+.about-section img {
+  max-width: 100%; /* Responsive image */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+  /* Features Section */
+  .features {
+    padding: 4rem 1rem;
+  }
+  
+  .features .fa-3x {
+    margin-bottom: 1rem;
+  }
+
+  .features h2 {
+    color: #004080;
+    font-weight: bold;
+
+  }
+  
+  .features h3 {
+    margin-bottom: 1rem;
+  }
+  
+
+
+/* Call to Action (CTA) Section */
+.cta {
+    background-color: #55a0c0;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta .cta-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .cta .plan-card {
+    background-color: #ffffff;
+    color: #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .cta .plan-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .cta .card-body {
+    padding: 20px;
+  }
+  
+  .cta .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .cta .card-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .cta .card-list li {
+    margin-bottom: 10px;
+  }
+  
+  .cta .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .cta .btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta .btn-outline-primary {
+    color: #007bff;
+    border: 2px solid #007bff;
+  }
+  
+  .cta .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .cta .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .cta .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  
+ /* Estilos para la sección de testimonios */
+.testimonials {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #004080;
+  }
+  
+  .testimonial {
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial .text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial .name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+ 
+.testimonial .stars {
+  font-size: 1.5rem;
+  color: #ffcc00; /* Gold color for stars */
+}
+  
+  /* Footer */
+  footer {
+    padding: 2rem 1rem;
+  }
+  
+  footer a {
+    color: #ffffff;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero {
+        height: 450px; /* Ajusta la altura en pantallas pequeñas */
+        padding: 2rem;
+      }
+    
+      .hero h1 {
+        font-size: 2.5rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+      }
+    
+      .hero p {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+      }
+    
+      .hero .btn {
+        font-size: 1rem; /* Ajusta el tamaño del botón en pantallas pequeñas */
+      }
+  
+  /*Features index*/
+    .features .col-md-4 {
+      margin-bottom: 1.5rem;
+    }
+  /* Llamado a la accion index */
+ 
+    .cta h2 {
+      font-size: 2rem;
+    }
+  
+    .cta p {
+      font-size: 1rem;
+    }
+  
+    .cta .plan-card {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 15px;
+    }
+  
+    .cta .card-title {
+      font-size: 1.3rem;
+    }
+  
+    .cta .price {
+      font-size: 1.2rem;
+    }
+  
+    .cta .btn {
+      font-size: 1rem;
+    }
+
+/*Testimonial index*/  
+    .testimonials h2 {
+      font-size: 2rem;
+    }
+  
+    .testimonial {
+      padding: 20px;
+    }
+  
+
+  
+
+  }
+  
+
+   

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/styles-tienda.css">
+    <link rel="stylesheet" href="css/styles-nivel2.css">
+
+    <link rel="icon" href="/img/logo1.jpg" type="image/jpeg">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <header>
+        <nav class="sidebar">
+            <div class="logo-container">
+                <img src="/img/logo.jpg" alt="Logo" class="logo">
+                <span class="logo-text">Mundo Infantil Terapéutico</span>
+            </div>
+    
+            <ul>
+                <li class="dropdown">
+                    <a href="/home">
+                        <i class="fas fa-home"></i>
+                        <span class="tooltip">Inicio</span>
+                    </a>
+                </li>
+                <li class="dropdown active">
+                    <a href="/hitos">
+                        <i class="fas fa-star"></i>
+                        <span class="tooltip">Hitos</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fas fa-book"></i>
+                        <span class="tooltip">Recursos</span>
+                        <i class="fas fa-caret-down "></i> 
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="/terapias"><i class="fas fa-brain"></i>Terapias</a>
+                        <a href="/guias"><i class="fas fa-file-pdf"></i>Guías</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span class="tooltip">Actividades</span>
+                        <i class="fas fa-caret-down "></i> 
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="/actividades-0-1"><i class="fas fa-baby-carriage"></i>0 a 1 año</a>
+                        <a href="/actividades-1-2"><i class="fas fa-baby"></i>1 a 2 años</a>
+                        <a href="/actividades-2-3"><i class="fas fa-child"></i>2 a 3 años</a>
+                        <a href="/actividades-3-5"><i class="fas fa-child"></i>3 a 5 años</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="/foro">
+                        <i class="fa fa-comments"></i>
+                        <span class="tooltip">Foro</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="/tienda">
+                        <i class="fas fa-store"></i>
+                        <span class="tooltip">Tienda</span>
+                    </a>
+                </li>
+                <form class="search-form">
+                    <input type="text" placeholder="Buscar..." name="query">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </ul>
+            <div class="user-menu">
+                <a href="#" class="user-menu-toggle">
+                    <img src="/img/user-icon.png" alt="User Photo" class="user-photo">
+                    <div class="user-info">
+                        <span class="user-name">Nombre de Usuario</span>
+                        <i class="fas fa-caret-down "></i> <!-- Agrega la flecha aquí -->
+                    </div>
+                </a>
+                <div class="user-menu-dropdown">
+                    <a href="perfil"><i class="fas fa-edit"></i>Editar Perfil</a>
+                    <a href="logout"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
+                </div>
+            </div>
+            
+        </nav>
+    
+        <!-- Barra horizontal para pantallas pequeñas -->
+        <nav class="navbar navbar-expand-lg d-lg-none">
+            <div class="logo-container">
+                <a href="/home">
+                    <img src="/img/logo.jpg" alt="Logo" class="logo">
+                </a>
+            </div>
+            <!-- Botón de hamburguesa -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home">
+                            <i class="fas fa-home"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/hitos">
+                            <i class="fas fa-star"></i> Hitos
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-book"></i> Recursos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <a class="dropdown-item" href="/terapias"><i class="fas fa-brain"></i> Terapias</a>
+                            <a class="dropdown-item" href="/guias"><i class="fas fa-file-pdf"></i> Guías</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="activitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-puzzle-piece"></i> Actividades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="activitiesDropdown">
+                            <a class="dropdown-item" href="/actividades-0-1"><i class="fas fa-baby-carriage"></i> 0 a 1 año</a>
+                            <a class="dropdown-item" href="/actividades-1-2"><i class="fas fa-baby"></i> 1 a 2 años</a>
+                            <a class="dropdown-item" href="/actividades-2-3"><i class="fas fa-child"></i> 2 a 3 años</a>
+                            <a class="dropdown-item" href="/actividades-3-5"><i class="fas fa-child"></i> 3 a 5 años</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/foro">
+                            <i class="fa fa-comments"></i> Foro
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tienda">
+                            <i class="fas fa-store"></i> Tienda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="search-form">
+                            <input type="text" placeholder="Buscar..." name="query">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="activitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="/img/user-icon.png" alt="User Photo" class="user-photo">
+                            Nombre de Usuario
+                        </a>
+                    <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                        <a class="dropdown-item" href="/perfil"><i class="fas fa-edit"></i> Editar Perfil</a>
+                        <a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        </header>
+
+
+<main>
+
+    
+    <div class="container">
+        <h1>Hitos de Desarrollo en niños</h1>
+        <div class="gallery">
+            
+            <div class="item card">
+              <img src="/img/motor.jpg" alt="Desarrollo Motor" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Desarrollo Motor</h5>
+              </div>
+              <button class="more-btn" data-target="#motor-info">Más</button>
+            </div>
+            <div class="item card">
+                <img src="/img/lenguaje.jpg" alt="Desarrollo del Lenguaje" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Desarrollo del Lenguaje</h5>
+                </div>
+                <button class="more-btn" data-target="#lenguaje-info">Más</button>
+            </div>
+            <div class="item card">
+                <img src="/img/cognitivo.jpg" alt="Desarrollo Cognitivo" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Desarrollo Cognitivo</h5>
+                </div>
+                <button class="more-btn" data-target="#cognitivo-info">Más</button>
+            </div>
+            <div class="item card">
+                <img src="/img/social.jpg" alt="Desarrollo Social" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Desarrollo Social y Emocional</h5>
+                </div>
+                <button class="more-btn" data-target="#social-info">Más</button>
+            </div>
+            <div class="item card">
+                <img src="/img/adaptativas.jpg" alt="Habilidades Adaptativas" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Habilidades Adaptativas</h5>
+                </div>
+                <button class="more-btn" data-target="#adaptativas-info">Más</button>
+            </div>
+          </div>
+        
+           
+        <div class="info-sections">
+            <!-- Sección de Desarrollo Motor -->
+            <section id="motor-info" class="info-section visible">
+                <div class="content">
+                    <h2>Desarrollo Motor</h2>
+                    <div class="row">
+                        <!-- Columna izquierda -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 0 a 6 meses</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Sostener la cabeza brevemente cuando está boca abajo.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mover brazos y piernas de manera desordenada.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Seguir objetos con la mirada.</li>
+                                </ul>
+                                <h4>De 7 a 12 meses</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Sostener la cabeza de manera más estable.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Girar de boca arriba a boca abajo.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Sentarse con apoyo.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Columna derecha para imágenes -->
+                        <div class="col">
+                            <a href="/img/desarrollo_motor.jpg" target="_blank">
+                                <img src="/img/desarrollo_motor.jpg" alt="Desarrollo Motor" class="section-image">
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 12 a 18 meses:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Caminar de manera independiente.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Subir escalones con ayuda.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Patear una pelota hacia adelante.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_motor1.jpg" target="_blank">
+                                    <img src="/img/desarrollo_motor1.jpg" alt="Desarrollo Motor" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 18 a 24 meses:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Correr sin caerse.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Pararse sobre un pie por unos segundos.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Usar cucharas y tenedores para comer.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_motor2.jpg" target="_blank">
+                                    <img src="/img/desarrollo_motor2.jpg" alt="Desarrollo Motor" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 2 a 3 años:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Caminar hacia atrás.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Saltar con ambos pies.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a pedalear un triciclo.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_motor3.jpg" target="_blank">
+                                    <img src="/img/desarrollo_motor3.jpg" alt="Desarrollo Motor" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 3 a 5 años:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Correr en línea recta y girar rápidamente.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Saltar hacia adelante y hacia atrás.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Utilizar tijeras de manera más precisa.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_motor4.jpg" target="_blank">
+                                    <img src="/img/desarrollo_motor4.jpg" alt="Desarrollo Motor" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Sección Desarrollo del Lenguaje*-->
+
+            <section id="lenguaje-info" class="info-section">
+                <div class="content">
+                    <h2>Desarrollo de Lenguaje</h2>
+                    <div class="row">
+                        <!-- Columna izquierda -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 0 a 6 meses</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Hacer sonidos de balbuceo.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Responder a sonidos familiares.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mostrar interés por la voz de los padres.</li>
+                                </ul>
+                                <h4>De 7 a 12 meses</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Decir sílabas repetitivas ("ma-ma", "pa-pa").</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Entender y responder a instrucciones simples.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Imitar sonidos y gestos.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Columna derecha para imágenes -->
+                        <div class="col">
+                            <a href="/img/desarrollo_lenguaje.jpg" target="_blank">
+                                <img src="/img/desarrollo_lenguaje.jpg" alt="Desarrollo Lenguaje" class="section-image">
+                            </a>  
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 12 a 18 meses:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Decir palabras simples como "mamá" o "papá".</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comprender instrucciones sencillas.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Imitar sonidos y palabras.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_lenguaje1.jpg" target="_blank">
+                                    <img src="/img/desarrollo_lenguaje1.jpg" alt="Desarrollo Lenguaje" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 18 a 24 meses:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Formar oraciones cortas de dos palabras ("quiero leche", "yo juego").</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a nombrar objetos y personas familiares.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Seguir instrucciones simples de dos pasos.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_lenguaje2.jpg" target="_blank">
+                                    <img src="/img/desarrollo_lenguaje2.jpg" alt="Desarrollo Lenguaje" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 2 a 3 años:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Formar oraciones más complejas.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Seguir instrucciones de tres pasos.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a contar hasta 3 o 5.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_lenguaje3.jpg" target="_blank">
+                                    <img src="/img/desarrollo_lenguaje3.jpg" alt="Desarrollo Lenguaje" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 3 a 5 años:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Hablar de manera clara y comprensible para los adultos.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Contar hasta 10 o más.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comprender instrucciones complejas y seguir una conversación.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_lenguaje4.jpg" target="_blank">
+                                    <img src="/img/desarrollo_lenguaje4.jpg" alt="Desarrollo Lenguaje" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+          
+</section>
+
+
+            <!-- Sección de Desarrollo Cognitivo -->
+            <section id="cognitivo-info" class="info-section">
+                <div class="content">
+                    <h2>Desarrollo Cognitivo</h2>
+                    <div class="row">
+                        <!-- Columna izquierda -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 0 a 6 meses</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Seguir objetos en movimiento con la mirada.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mostrar interés por juguetes y objetos nuevos.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a reconocer caras familiares.</li>
+                                </ul>
+                                <h4>De 7 a 12 meses</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comprender el concepto de causa y efecto (por ejemplo, presionar un botón para que suene un juguete).</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Explorar objetos utilizando diferentes movimientos y sentidos.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Identificar objetos familiares por su nombre.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Columna derecha para imágenes -->
+                        <div class="col">
+                            <a href="/img/desarrollo_cognitivo.jpg" target="_blank">
+                                <img src="/img/desarrollo_cognitivo.jpg" alt="Desarrollo Cognitivo" class="section-image">
+                            </a>   
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 12 a 18 meses:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Identificar partes del cuerpo al ser nombradas.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comprender conceptos simples como "dentro" y "fuera".</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Resolver problemas simples de manipulación de objetos.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_cognitivo1.jpg" target="_blank">
+                                    <img src="/img/desarrollo_cognitivo1.jpg" alt="Desarrollo Cognitivo" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 18 a 24 meses:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a reconocer colores básicos.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Clasificar objetos por forma o color.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a jugar de manera simbólica (usar un juguete como si fuera otra cosa).</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_cognitivo2.jpg" target="_blank">
+                                    <img src="/img/desarrollo_cognitivo2.jpg" alt="Desarrollo Cognitivo" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 2 a 3 años:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Identificar formas simples como círculos y cuadrados.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Resolver rompecabezas sencillos.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comprender conceptos de tamaño como "grande" y "pequeño".</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_cognitivo3.jpg" target="_blank">
+                                    <img src="/img/desarrollo_cognitivo3.jpg" alt="Desarrollo Cognitivo" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 3 a 5 años:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Reconocer letras y números.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Resolver problemas simples de suma y resta.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a comprender conceptos de tiempo (días, semanas, meses).</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_cognitivo4.jpg" target="_blank">
+                                    <img src="/img/desarrollo_cognitivo4.jpg" alt="Desarrollo Cognitivo" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <!-- Sección de Desarrollo Social -->
+            <section id="social-info" class="info-section">
+                <div class="content">
+                    <h2>Desarrollo Social y Emocional</h2>
+                    <div class="row">
+                        <!-- Columna izquierda -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 0 a 6 meses</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Sonreír en respuesta a estímulos sociales.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mostrar preferencia por el contacto visual con los cuidadores.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mostrar señales de malestar o comodidad (llorar cuando tienen hambre, sueño, etc.).</li>
+                                </ul>
+                                <h4>De 7 a 12 meses</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mostrar alegría al interactuar con los demás.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mostrar ansiedad por la separación de los cuidadores.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a imitar acciones y expresiones faciales.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Columna derecha para imágenes -->
+                        <div class="col">
+                            <a href="/img/desarrollo_social.jpg" target="_blank">
+                                <img src="/img/desarrollo_social.jpg" alt="Desarrollo Social" class="section-image">
+                            </a>      
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 12 a 18 meses:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mostrar afecto hacia familiares y cuidadores.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a jugar al lado de otros niños.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Experimentar emociones como la alegría, la frustración y la tristeza.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_social1.jpg" target="_blank">
+                                    <img src="/img/desarrollo_social1.jpg" alt="Desarrollo Social" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 18 a 24 meses:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Compartir juguetes y mostrar interés por la interacción social.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Imitar acciones y comportamientos de adultos.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mostrar empatía hacia otros niños y adultos./
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_social2.jpg" target="_blank">
+                                    <img src="/img/desarrollo_social2.jpg" alt="Desarrollo Social" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 2 a 3 años:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a jugar cooperativamente con otros niños.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mostrar interés en imitar roles de adultos.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Expresar emociones de manera más compleja y verbalizar sentimientos.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_social3.jpg" target="_blank">
+                                    <img src="/img/desarrollo_social3.jpg" alt="Desarrollo Social" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 3 a 5 años:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Jugar cooperativamente en grupos pequeños.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mostrar interés en compartir y ayudar a otros.
+                                    <li><i class="fas fa-check-circle text-success"></i> Desarrollar amistades y mostrar empatía hacia los compañeros.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_social4.jpg" target="_blank">
+                                    <img src="/img/desarrollo_social4.jpg" alt="Desarrollo Social" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección de Habilidades Adaptativas -->
+
+            <section id="adaptativas-info" class="info-section">
+                <div class="content">
+                    <h2>Habilidades Adaptativas</h2>
+                    <div class="row">
+                        <!-- Columna izquierda -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 0 a 6 meses</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Reconocer y responder a la rutina diaria (comida, sueño, baño).</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mostrar preferencias por ciertos juguetes o actividades.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a desarrollar patrones de sueño regulares.</li>
+                                </ul>
+                                <h4>De 7 a 12 meses</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comer alimentos sólidos y beber de una taza con ayuda.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Participar en rutinas básicas de cuidado personal (lavarse las manos, cepillarse los dientes con ayuda).</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a desarrollar autonomía al jugar (explorar juguetes, tomar decisiones simples).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Columna derecha para imágenes -->
+                        <div class="col">
+                            <a href="/img/desarrollo_habilidades.jpg" target="_blank">
+                                <img src="/img/desarrollo_habilidades.jpg" alt="Desarrollo Habilidades" class="section-image">
+                            </a>        
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 12 a 18 meses:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a usar cubiertos para comer con ayuda.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Mostrar interés en el control de esfínteres.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Participar en rutinas de vestimenta y aseo personal.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_habilidades1.jpg" target="_blank">
+                                    <img src="/img/desarrollo_habilidades1.jpg" alt="Desarrollo Habilidades" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 18 a 24 meses:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Vestirse y desvestirse con ayuda.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comer de manera más independiente.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Usar el inodoro para orinar o defecar con ayuda y supervision.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_habilidades2.jpg" target="_blank">
+                                    <img src="/img/desarrollo_habilidades2.jpg" alt="Desarrollo Habilidades" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 2 a 3 años:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Comenzar a lavarse las manos y cepillarse los dientes de manera independiente.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Vestirse con ayuda para prendas más complejas.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Usar el inodoro de manera más autónoma, especialmente durante el día.</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_habilidades3.jpg" target="_blank">
+                                    <img src="/img/desarrollo_habilidades3.jpg" alt="Desarrollo Habilidades" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col">
+                            <div class="hitos-list">
+                                <h4>De 3 a 5 años:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success"></i> Vestirse de manera independiente, incluyendo abotonarse y atarse los zapatos.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Usar el inodoro de manera completamente autónoma, tanto de día como de noche.</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Participar en actividades de cuidado del hogar de manera básica (guardar juguetes, ayudar a preparar alimentos sencillos).</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="/img/desarrollo_habilidades4.jpg" target="_blank">
+                                    <img src="/img/desarrollo_habilidades4.jpg" alt="Desarrollo Habilidades" class="section-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+                                
+                           
+        </div>
+    </div>
+
+</main>
+
+
+
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Información de Contacto</h2>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Falsa 123, Ciudad, País</li>
+                <li><i class="fas fa-phone-alt"></i> Teléfono: +123 456 7890</li>
+                <li><i class="fas fa-envelope"></i> Email: contacto@mit.com</li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Redes Sociales</h2>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Agrega más iconos según sea necesario -->
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Suscríbete a Nuestro Boletín</h2>
+            <form action="#" method="post">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 MIT. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/js/hitos.js"></script>
+</body>
+</html>

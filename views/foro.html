@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foro</title>
+  <link rel="stylesheet" href="/css/styles-foro.css">
+  <link rel="stylesheet" href="css/styles-nivel2.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="icon" href="/img/logo1.jpg" type="image/jpeg">
+
+</head>
+<body>
+    <header>
+        <nav class="sidebar">
+            <div class="logo-container">
+                <img src="/img/logo.jpg" alt="Logo" class="logo">
+                <span class="logo-text">Mundo Infantil Terapéutico</span>
+            </div>
+    
+            <ul>
+                <li class="dropdown">
+                    <a href="/home">
+                        <i class="fas fa-home"></i>
+                        <span class="tooltip">Inicio</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="/hitos">
+                        <i class="fas fa-star"></i>
+                        <span class="tooltip">Hitos</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fas fa-book"></i>
+                        <span class="tooltip">Recursos</span>
+                        <i class="fas fa-caret-down "></i> 
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="/terapias"><i class="fas fa-brain"></i>Terapias</a>
+                        <a href="/guias"><i class="fas fa-file-pdf"></i>Guías</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span class="tooltip">Actividades</span>
+                        <i class="fas fa-caret-down "></i> 
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="/actividades-0-1"><i class="fas fa-baby-carriage"></i>0 a 1 año</a>
+                        <a href="/actividades-1-2"><i class="fas fa-baby"></i>1 a 2 años</a>
+                        <a href="/actividades-2-3"><i class="fas fa-child"></i>2 a 3 años</a>
+                        <a href="/actividades-3-5"><i class="fas fa-child"></i>3 a 5 años</a>
+                    </div>
+                </li>
+                <li class="dropdown active">
+                    <a href="/foro">
+                        <i class="fa fa-comments"></i>
+                        <span class="tooltip">Foro</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="/tienda">
+                        <i class="fas fa-store"></i>
+                        <span class="tooltip">Tienda</span>
+                    </a>
+                </li>
+                <form class="search-form">
+                    <input type="text" placeholder="Buscar..." name="query">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </ul>
+            <div class="user-menu">
+                <a href="#" class="user-menu-toggle">
+                    <img src="/img/user-icon.png" alt="User Photo" class="user-photo">
+                    <div class="user-info">
+                        <span class="user-name">Nombre de Usuario</span>
+                        <i class="fas fa-caret-down "></i> <!-- Agrega la flecha aquí -->
+                    </div>
+                </a>
+                <div class="user-menu-dropdown">
+                    <a href="perfil"><i class="fas fa-edit"></i>Editar Perfil</a>
+                    <a href="logout"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
+                </div>
+            </div>
+            
+        </nav>
+    
+        <!-- Barra horizontal para pantallas pequeñas -->
+        <nav class="navbar navbar-expand-lg d-lg-none">
+            <div class="logo-container">
+                <a href="/home">
+                    <img src="/img/logo.jpg" alt="Logo" class="logo">
+                </a>
+            </div>
+            <!-- Botón de hamburguesa -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home">
+                            <i class="fas fa-home"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/hitos">
+                            <i class="fas fa-star"></i> Hitos
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-book"></i> Recursos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <a class="dropdown-item" href="/terapias"><i class="fas fa-brain"></i> Terapias</a>
+                            <a class="dropdown-item" href="/guias"><i class="fas fa-file-pdf"></i> Guías</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="activitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-puzzle-piece"></i> Actividades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="activitiesDropdown">
+                            <a class="dropdown-item" href="/actividades-0-1"><i class="fas fa-baby-carriage"></i> 0 a 1 año</a>
+                            <a class="dropdown-item" href="/actividades-1-2"><i class="fas fa-baby"></i> 1 a 2 años</a>
+                            <a class="dropdown-item" href="/actividades-2-3"><i class="fas fa-child"></i> 2 a 3 años</a>
+                            <a class="dropdown-item" href="/actividades-3-5"><i class="fas fa-child"></i> 3 a 5 años</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/foro">
+                            <i class="fa fa-comments"></i> Foro
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tienda">
+                            <i class="fas fa-store"></i> Tienda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="search-form">
+                            <input type="text" placeholder="Buscar..." name="query">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="activitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="/img/user-icon.png" alt="User Photo" class="user-photo">
+                            Nombre de Usuario
+                        </a>
+                    <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                        <a class="dropdown-item" href="/perfil"><i class="fas fa-edit"></i> Editar Perfil</a>
+                        <a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        </header>
+
+  <main>
+    <section>
+      <h2>Foro</h2>
+      <!-- HTML -->
+<div class="forum-container">
+    <!-- Tema del foro -->
+<div class="forum-topic">
+    <h2>Título del tema</h2>
+    <p>Descripción del tema</p>
+    <div class="forum-topic-author">
+      <img src="avatar.jpg" alt="Avatar del autor">
+      <span>Autor: <a href="#">Nombre de usuario</a></span>
+    </div>
+    <div class="forum-topic-date">Fecha de publicación: 2023-02-20</div>
+    <div class="forum-topic-stats">
+      <span>Respuestas: 10</span>
+      <span>Vistas: 100</span>
+    </div>
+    <button class="forum-button">Responder</button>
+  </div>
+  
+  <!-- Respuesta del foro -->
+  <div class="forum-response">
+    <h3>Título de la respuesta</h3>
+    <p>Texto de la respuesta</p>
+    <div class="forum-response-author">
+      <img src="avatar.jpg" alt="Avatar del autor">
+      <span>Autor: <a href="#">Nombre de usuario</a></span>
+    </div>
+    <div class="forum-response-date">Fecha de publicación: 2023-02-20</div>
+    <button class="forum-button">Votar</button>
+  </div>
+  
+  <!-- Formulario de respuesta -->
+  <form class="forum-form">
+    <textarea name="respuesta" placeholder="Escribe tu respuesta"></textarea>
+    <button type="submit" class="forum-button">Enviar respuesta</button>
+  </form>
+  </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Información de Contacto</h2>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Falsa 123, Ciudad, País</li>
+                <li><i class="fas fa-phone-alt"></i> Teléfono: +123 456 7890</li>
+                <li><i class="fas fa-envelope"></i> Email: contacto@mit.com</li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Redes Sociales</h2>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Agrega más iconos según sea necesario -->
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Suscríbete a Nuestro Boletín</h2>
+            <form action="#" method="post">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 MIT. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/js/foro.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.item {
+  width: calc(20% - 30px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.item .more-btn {
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  margin-bottom: 0;
+  color: #084382;
+}
+
+.more-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 5px;
+}
+
+.more-btn:hover {
+  background-color: #0056b3;
+}
+
+.visible {
+  display: block !important;
+}
+
+.info-section {
+  display: none; /* Inicialmente oculto, se muestra con JavaScript */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.info-section .content {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.info-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.info-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    
+   
+color: #333;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hitos-list {
+    margin-bottom: 20px;
+}
+
+.hitos-list h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.hitos-list ul {
+    list-style: none;
+    
+   
+padding: 0;
+}
+
+.hitos-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.linea {
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 100%;
+  }
+ .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 80%;
+    }
+
+    .info-section {
+      display: none; /* Inicialmente oculto, se muestra con JavaScript */
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      width: 100%; /* Aumentar el ancho del contenedor */
+      max-width: 1200px; /* Establecer un máximo de ancho */
+      margin: 0 auto; /* Centrar el contenedor */
+    }
+
+    .info-section .content {
+      margin: 0 auto;
+      max-width: 100%; /* Ajustar el ancho del contenido */
+    }
+    
+    .info-section h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center; /* Centrar el título */
+    }
+    
+    .info-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center; /* Centrar el subtítulo */
+    }
+    
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center; /* Centrar el contenido */
+    }
+    
+    .col {
+      flex: 1;
+      min-width: 300px;
+      max-width: 50%; /* Ajustar el ancho de las columnas */
+    }
+    
+    .hitos-list {
+      margin-bottom: 20px;
+      padding: 20px; /* Añadir padding para que el contenido no se pegue a los bordes */
+    }
+    
+    .hitos-list h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #007bff;
+      text-align: center; /* Centrar el título */
+    }
+    
+    .hitos-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; /* Eliminar el margen */
+    }
+    
+    .hitos-list li {
+      font-size: 16px;
+      margin-bottom: 10px;
+      padding: 0; /* Añadir padding para que el contenido no se pegue a los bordes */
+    }
+    
+    .section-image {
+      width: 100%;
+      max-width: 400px; /* Ajustar el ancho de la imagen */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: -30px auto 10px; /* Centrar la imagen */
+    }
+
+    .info-section.active {
+        display: block !important;
+    }
+    .visible {
+      display: block;
+    }
+    
+    .hidden {
+      display: none;
+    }
+}
