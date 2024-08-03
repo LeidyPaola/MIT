@@ -1,54 +1,7 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Manejador de eventos para los dropdowns en la barra de navegación
-    const dropdowns = document.querySelectorAll('.dropdown-toggle');
-    
-    dropdowns.forEach(dropdown => {
-      dropdown.addEventListener('click', function (event) {
-        event.preventDefault();
-        
-        const dropdownMenu = this.nextElementSibling;
-        
-        if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
-          // Alterna la visibilidad del menú desplegable
-          const isVisible = dropdownMenu.style.display === 'block';
-          dropdownMenu.style.display = isVisible ? 'none' : 'block';
-        }
-      });
-    });
+
+
   
-    // Manejador de eventos para el menú de usuario
-    const userMenuToggle = document.querySelector('.user-menu-toggle');
-    const userMenuDropdown = document.querySelector('.user-menu-dropdown');
-  
-    if (userMenuToggle && userMenuDropdown) {
-      userMenuToggle.addEventListener('click', function (event) {
-        event.preventDefault();
-        
-        // Alterna la visibilidad del menú desplegable del usuario
-        const isVisible = userMenuDropdown.style.display === 'block';
-        userMenuDropdown.style.display = isVisible ? 'none' : 'block';
-      });
-    }
-  
-    
-  
-  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-    toggle.addEventListener('click', function(event) {
-      event.preventDefault();
-      let parentLi = this.closest('li');
-      let isOpen = parentLi.classList.contains('open');
-  
-      // Cerrar todos los menús abiertos
-      document.querySelectorAll('.dropdown').forEach(item => {
-        item.classList.remove('open');
-      });
-  
-      // Abrir el menú actual si no estaba abierto
-      if (!isOpen) {
-        parentLi.classList.add('open');
-      }
-    });
-  });
+ 
 
   document.addEventListener('DOMContentLoaded', function () {
     // ...
@@ -69,4 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
           .catch(error => console.error('Error:', error));
       });
     }
+});
+
+// Agrega un evento de click al botón de hamburguesa
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+  // Agrega o elimina la clase active a la barra lateral
+  document.querySelector('.sidebar').classList.toggle('active');
 });

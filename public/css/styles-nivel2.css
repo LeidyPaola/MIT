@@ -1,65 +1,527 @@
+/* Estilos generales de la barra lateral */
+.sidebar {
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #004080;
+  transition: width 0.3s;
+  overflow-x: hidden;
+  overflow-y: auto; /* Agrega esta propiedad */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
 
-
-main {
-    padding: 20px;
 }
 
-h1, h2 {
-    text-align: center;
-    color: #333;
+.sidebar .active a {
+  background-color: #1699ea;
+}
+.sidebar:hover {
+  width: 250px;
 }
 
-form {
-    max-width: 400px;
-    margin: auto;
-    margin-bottom: 20px;
+/* Contenedor del logo */
+.logo-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0;
+  background-color: #004080;
+  border-bottom: 4px #fff solid;
+
 }
 
-label {
-    display: block;
-    margin-top: 10px;
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin-left: 10px;
+
 }
 
-input, textarea {
+.logo-text {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 20px;
+  display: none;
+}
+
+.sidebar:hover .logo-text {
+  display: inline-block;
+}
+
+.sidebar-item-text {
+  display: none;
+}
+
+.sidebar:hover .sidebar-item-text {
+  display: inline-block;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+/* Lista de navegación */
+ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover {
+  background-color: #0066cc;
+
+}
+
+.dropdown a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  position: relative;
+  font-size: 18px;
+  
+}
+
+.dropdown a i {
+  font-size: 24px; /* Aumenta el tamaño de los iconos */
+  margin-right: 10px; /* Agrega un margen a la derecha para centrar los iconos */
+  vertical-align: middle; /* Centra los iconos verticalmente */
+}
+
+
+
+/* Estilos del dropdown */
+.dropdown-toggle .dropdown-arrow {
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0059b3;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-left: 60px;
+  
+}
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+
+}
+
+.dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+.dropdown-menu a:hover {
+  background-color: #1084f9;
+  
+}
+
+/* Estilo del contenedor de búsqueda */
+.search-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  background-color: #004080;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Estilo del input de búsqueda */
+.search-input {
+  width: 0;
+  padding: 10px;
+  border: 2px solid #004080;
+  border-radius: 20px;
+  outline: none;
+  transition: width 0.3s ease, padding 0.3s ease;
+  opacity: 0;
+  margin-left: -10px;
+}
+
+/* Estilo del botón de búsqueda */
+.search-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s; /* Agrega la transición de transform */
+  margin-right: 20px;
+
+}
+
+.search-container:hover .search-button {
+  transform: rotate(360deg); /* Gira la lupa 360° */
+  transition: transform 0.5s; /* Agrega una transición suave */
+}
+
+
+
+/* Estilo del contenedor de búsqueda cuando se pasa el mouse sobre él */
+.search-container:hover {
+  background-color: transparent;
+}
+
+/* Estilo del input de búsqueda cuando se pasa el mouse sobre el contenedor */
+.search-container:hover .search-input {
+  width: 200px;
+  opacity: 1;
+  padding: 5px 15px;
+  margin-left: 0; /* Cambia el margen a 0 */
+}
+
+
+
+/* Menú del usuario */
+.user-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #004080;
+  position: relative;
+  margin-top: auto; /* Mueve el menú de usuario al final */
+  border-top: 1px #000000 solid;
+  justify-content: flex-start;
+
+}
+
+.user-menu:hover {
+  background-color: #0059b3;
+
+}
+
+.user-menu-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.user-menu-toggle:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: #000000;
+}
+
+.user-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-info {
+  margin-left: 10px;
+  display: none;
+  flex-direction: column;
+}
+
+.sidebar:hover .user-info,
+.user-menu:hover .user-info {
+  display: flex;
+}
+
+.user-name {
+  font-size: 18px;
+}
+
+.user-menu .user-menu-dropdown {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background-color: #0059b3;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-left: 60px;
+}
+
+.user-menu:hover .user-menu-dropdown {
+  display: flex;
+  background-color: #0059b3;
+}
+
+/* Estilos del dropdown */
+.user-menu-toggle .dropdown-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transition: transform 0.3s;
+}
+
+.user-menu:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+.user-menu-dropdown a {
+  width: 100%;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+
+
+.user-menu-dropdown a:last-child {
+  border-bottom: none;
+}
+
+.user-menu-dropdown a:hover {
+  background-color: #1084f9;
+}
+
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .sidebar {
     width: 100%;
+    height: 80px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
-    margin-top: 5px;
+    background-color: #004080;
+    z-index: 1000;
+
+  }
+
+  .sidebar.active {
+    height: auto;
+    padding-top: 80px; /* Ajusta el padding top para que el contenido se muestre debajo de los 80px */
+    flex-direction: column;
+
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #333;
-    color: white;
+  .logo-container {
+    position: absolute;
+  top: 10px;
+  left: 10px;
+  width: auto;
+  flex: 1;
+  justify-content: flex-start;
+  padding: 0;
+  border-bottom: none;
+
+    
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .sidebar:hover .logo-text {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: inline-block;
+    background-color: transparent;
     border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-#product-list > div {
-    border: 1px solid #ccc;
+    color: #fff;
     padding: 10px;
-    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute; /* Posiciona el botón de hamburguesa de manera absoluta */
+    right: 10px; /* Ajusta la posición del botón de hamburguesa */
+    top: 10px; /* Ajusta la posición del botón de hamburguesa */
+  }
+
+  .sidebar ul {
+    border-top: 4px solid #fff; /* Agrega el border top */
+
+  }
+
+  .sidebar ul,
+  .search-container,
+  .user-menu {
+    display: none;
+
+  }
+
+  .sidebar.active ul,
+  .sidebar.active .search-container,
+  .sidebar.active .user-menu {
+    display: block; /* Cambia el display a block */
+  
+  }
+
+  .sidebar:hover {
+    width: 100%;
+  }
+
+  /* Agrega esta clase a los elementos que contienen los nombres de los hitos */
+.sidebar-item-text, .user-info {
+  display: block; /* Cambia el display a block */
 }
 
-#product-list h3 {
-    margin: 0;
+/* Modifica los estilos CSS para que no se oculten cuando se quita el cursor */
+.sidebar:hover .sidebar-item-text,
+.sidebar.active .sidebar-item-text,
+.sidebar:hover .user-info,
+.sidebar.active .user-info {
+  display: block; /* Mantén el display en block */
 }
 
-#product-list p {
-    margin: 5px 0;
+
+.search-input:hover {
+  width: 80% !important; /* Ancho del 100% de la pantalla */
+  padding: 10px; /* Agrega un padding para que el input no se pegue al borde */
 }
 
-#product-list button {
-    margin-right: 5px;
-    background-color: #008CBA;
+.dropdown-menu, .user-menu-dropdown{
+  margin-left: 50% !important;
+}
 }
 
-#product-list button:hover {
-    background-color: #005f75;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos generales del footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
 }
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: #fff 1px solid;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer-section .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section .social-icon {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer-section .social-icon:hover {
+  color: #057bf1;
+}
+
+.footer-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-section form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-section form button {
+  padding: 10px 20px;
+  background-color: #057bf1;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-section form button:hover {
+  background-color: #005bb5;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+

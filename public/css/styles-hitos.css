@@ -105,6 +105,7 @@ h1 {
 .info-section h2 {
     font-size: 28px;
     margin-bottom: 20px;
+    margin-left: 20px;
     
    
 color: #333;
@@ -123,6 +124,7 @@ color: #333;
 
 .hitos-list {
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .hitos-list h4 {
@@ -167,7 +169,7 @@ padding: 0;
     }
 
     .item {
-        width: 80%;
+        width: 100%;
     }
 
     .info-section {
@@ -207,15 +209,18 @@ padding: 0;
       justify-content: center; /* Centrar el contenido */
     }
     
+    
     .col {
       flex: 1;
       min-width: 300px;
       max-width: 50%; /* Ajustar el ancho de las columnas */
+
     }
     
     .hitos-list {
       margin-bottom: 20px;
-      padding: 20px; /* Añadir padding para que el contenido no se pegue a los bordes */
+      padding: 20px 0; /* Añadir padding para que el contenido no se pegue a los bordes */
+      margin-left: -10px;
     }
     
     .hitos-list h4 {
