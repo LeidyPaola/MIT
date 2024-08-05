@@ -1,3 +1,11 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Cambia 'Roboto' por el nombre de la fuente que hayas elegido */
+  background-color: #fff;
+  color: #333;
+}
+
 /* Estilos generales de la barra lateral */
 .sidebar {
   width: 80px;
@@ -308,6 +316,15 @@ ul {
 }
 
 
+.footer-container h2{
+ 
+  font-size: 1.8rem;
+  color: #057bf1;
+  margin: 20px 0;
+  text-shadow: 1px 1px 3px rgb(5, 5, 5); /* Agrega sombra al texto para mejor contraste */
+  font-weight: bold;
+  
+}
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {

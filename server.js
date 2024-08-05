@@ -104,6 +104,22 @@ app.get('/hitos', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'hitos.html'));
 });
 
+app.get('/actividades-0-1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'actividades-0-1.html'));
+});
+
+app.get('/actividades-1-2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'actividades-1-2.html'));
+});
+
+app.get('/actividades-2-3', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'actividades-2-3.html'));
+});
+
+app.get('/actividades-3-5', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'actividades-3-5.html'));
+});
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });

@@ -1,10 +1,4 @@
-/* Estilos generales */
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif; /* Cambia 'Roboto' por el nombre de la fuente que hayas elegido */
-    background-color: #fff;
-    color: #333;
-}
+
 
 /* General section styles */
 .introduccion .neurodivergencias {
@@ -75,7 +69,7 @@ body {
 
 
 /* Headings */
-.introduccion h2, footer h2 {
+.introduccion h2 {
     font-size: 1.8rem;
     color: #057bf1;
     margin: 20px 0;

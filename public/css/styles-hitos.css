@@ -96,19 +96,14 @@ h1 {
     max-width: 1200px;
 }
 
-.info-section h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #333;
-}
+
 
 .info-section h2 {
     font-size: 28px;
     margin-bottom: 20px;
     margin-left: 20px;
-    
+    color: #004080;
    
-color: #333;
 }
 
 .row {
@@ -188,11 +183,9 @@ padding: 0;
       max-width: 100%; /* Ajustar el ancho del contenido */
     }
     
-    .info-section h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      color: #333;
-      text-align: center; /* Centrar el título */
+    .container h1 {
+      font-size: 2rem;
+      
     }
     
     .info-section h2 {

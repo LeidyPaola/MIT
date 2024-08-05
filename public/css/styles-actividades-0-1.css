@@ -1,0 +1,111 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #004080;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+
+h3 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 20px;
+
+}
+
+h5 {
+    color: #7a7a7a;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+
+
+.video-container {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.videos-tiktok {
+    background-color: #55a0c0;
+}
+
+.form-edades h5 {
+    font-weight: bold;
+    color: #004080;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+.form-edades1 {
+    background-color: #f9f9f9;
+}
+
+
+.container li, .container p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.container p {
+    margin-top: 30px;
+}
+
+.form-edades1 .col-md-6, .canciones-container .col-md-6{
+    border-right: #004080 1px solid;
+    
+}
+
+
+.form-edades1 .row > .col-md-6:last-child, .canciones-container .row > .col-md-6:last-child {
+    border-right: none;
+  }
+.activity-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px; /* Agrega este estilo */
+
+  }
+  .footer-bottom {
+    clear: both; /* Agrega este estilo */
+  }
+
+img {
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+@media (max-width: 767px) {
+    .video-container {
+        margin-bottom: 20px;
+    }
+}
