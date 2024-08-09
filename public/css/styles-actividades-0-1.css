@@ -18,13 +18,10 @@ h1, h2 {
 
 }
 
-
-
 h3 {
     text-align: center;
     color: #004080;
     margin-bottom: 20px;
-
 }
 
 h5 {
@@ -33,7 +30,30 @@ h5 {
     text-align: justify;
 }
 
+.text-center {
+    text-align: center;
+}
 
+
+img {
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+/*Estilos 0-1 año*/
+
+.actividades {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
 
 
 .video-container {
@@ -41,8 +61,19 @@ h5 {
     text-align: center;
 }
 
+.video-container1 {
+    margin: 80px 0;
+    align-items: center;
+}
+
 .videos-tiktok {
     background-color: #55a0c0;
+}
+
+/*Estilos 1-2 años*/
+
+.form-edades1 {
+    background-color: #f5f5f5;
 }
 
 .form-edades h5 {
@@ -53,17 +84,6 @@ h5 {
     text-align: center;
     transition: color 0.3s;
 }
-
-
-.text-center {
-    text-align: center;
-}
-
-
-.form-edades1 {
-    background-color: #f9f9f9;
-}
-
 
 .container li, .container p{
     font-size: 1.2rem;
@@ -79,30 +99,83 @@ h5 {
     
 }
 
-
-.form-edades1 .row > .col-md-6:last-child, .canciones-container .row > .col-md-6:last-child {
+.form-edades1 .row > .col-md-6:last-child, .canciones-container .row > .col-md-6:last-child
+{
     border-right: none;
   }
-.activity-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    margin-bottom: 30px; /* Agrega este estilo */
 
-  }
-  .footer-bottom {
-    clear: both; /* Agrega este estilo */
-  }
 
-img {
-    width: 350px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
+
+.pdf-download-section {
+    padding: 20px;
+    background-color: #e1f5f9;
 }
+
+.pdf-container h3 {
+    margin-top: 10px;
+}
+
+.pdf-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pdf-item {
+    background-color: #fff;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.pdf-item:hover {
+    transform: translateY(-5px);
+}
+
+.pdf-item img {
+    max-width: 300px;
+    max-height: 400px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.pdf-download-section .pdf-item p {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    color: #666; /* Color de texto */
+    margin: 15px;
+    margin-bottom: 10px; /* Espacio entre párrafos */
+    text-align: center; /* Alineación del texto */
+  }
+
+.download-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .pdf-item {
+        width: calc(50% - 10px);
+    }
+}
+
 
 @media (max-width: 767px) {
     .video-container {
