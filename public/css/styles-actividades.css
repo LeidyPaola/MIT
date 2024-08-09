@@ -76,14 +76,7 @@ img {
     background-color: #f5f5f5;
 }
 
-.form-edades h5 {
-    font-weight: bold;
-    color: #004080;
-    display: block;
-    margin-top: 10px;
-    text-align: center;
-    transition: color 0.3s;
-}
+
 
 .container li, .container p{
     font-size: 1.2rem;
@@ -94,12 +87,12 @@ img {
     margin-top: 30px;
 }
 
-.form-edades1 .col-md-6, .canciones-container .col-md-6{
+.form-edades1 .col-md-6, .form-edades .col-md-6{
     border-right: #004080 1px solid;
     
 }
 
-.form-edades1 .row > .col-md-6:last-child, .canciones-container .row > .col-md-6:last-child
+.form-edades1 .row > .col-md-6:last-child, .form-edades .row > .col-md-6:last-child
 {
     border-right: none;
   }
