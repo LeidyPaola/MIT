@@ -1,177 +1,229 @@
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 5px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
 }
+
 section {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h1, h2 {
-    color: #004080;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: bold;
-
+section h1, section h2 {
+  color: #004080;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
 }
 
-h3 {
-    text-align: center;
-    color: #004080;
-    margin-bottom: 20px;
+section h3 {
+  text-align: center;
+  color: #004080;
+  margin-bottom: 20px;
 }
 
-h5 {
-    color: #7a7a7a;
-    line-height: 1.6;
-    text-align: justify;
+section h5 {
+  color: #7a7a7a;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
+section iframe {
+  width: 560px;
+  height: 315px;
+}
 
-img {
-    width: 350px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
+section img {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /*Estilos 0-1 año*/
 
 .actividades {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
-    padding: 20px; /* Espacio interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin-left: 20px;
-    margin-bottom: 30px;
-  }
-
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+  padding: 20px; /* Espacio interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
 
 .video-container {
-    margin: 30px 0;
-    text-align: center;
+  margin: 30px 0;
+  text-align: center;
 }
 
 .video-container1 {
-    margin: 80px 0;
-    align-items: center;
+  margin: 80px 0;
+  align-items: center;
 }
 
 .videos-tiktok {
-    background-color: #55a0c0;
+  background-color: #55a0c0;
 }
 
 /*Estilos 1-2 años*/
 
 .form-edades1 {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
-
-
-.container li, .container p{
-    font-size: 1.2rem;
-    text-align: justify;
+.container li, .container p {
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
 .container p {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
-.form-edades1 .col-md-6, .form-edades .col-md-6{
-    border-right: #004080 1px solid;
-    
+.form-edades1 .col-md-6, .form-edades .col-md-6 {
+  border-right: #004080 1px solid;
 }
 
-.form-edades1 .row > .col-md-6:last-child, .form-edades .row > .col-md-6:last-child
-{
-    border-right: none;
-  }
-
-
-
+.form-edades1 .row > .col-md-6:last-child, .form-edades .row > .col-md-6:last-child {
+  border-right: none;
+}
 
 .pdf-download-section {
-    padding: 20px;
-    background-color: #e1f5f9;
+  padding: 20px;
+  background-color: #e1f5f9;
 }
 
 .pdf-container h3 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .pdf-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .pdf-item {
-    background-color: #fff;
-    width: 30%;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
+  background-color: #fff;
+  width: 30%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .pdf-item:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .pdf-item img {
-    max-width: 300px;
-    max-height: 400px;
-    height: auto;
-    margin-top: 20px;
+  max-width: 300px;
+  max-height: 400px;
+  height: auto;
+  margin-top: 20px;
 }
 
 .pdf-download-section .pdf-item p {
-    font-size: 1.2rem; /* Tamaño de fuente */
-    color: #666; /* Color de texto */
-    margin: 15px;
-    margin-bottom: 10px; /* Espacio entre párrafos */
-    text-align: center; /* Alineación del texto */
-  }
+  font-size: 1.2rem; /* Tamaño de fuente */
+  color: #666; /* Color de texto */
+  margin: 15px;
+  margin-bottom: 10px; /* Espacio entre párrafos */
+  text-align: center; /* Alineación del texto */
+}
 
 .download-btn {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .download-btn:hover {
-    background-color: #0056b3;
-    color: #fff;
-    text-decoration: none;
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
 }
+
+/* Media queries para pantallas con un ancho máximo de 768px */
 
 @media (max-width: 768px) {
-    .pdf-item {
-        width: calc(50% - 10px);
-    }
-}
+  .container {
+      max-width: 100%;
+      padding: 0 10px;
+  }
 
+  section {
+      padding: 20px;
+  }
 
-@media (max-width: 767px) {
-    .video-container {
-        margin-bottom: 20px;
-    }
+  section h1, section h2 {
+      font-size: 24px;
+  }
+
+  section h3 {
+      font-size: 18px;
+  }
+
+  section iframe {
+      width: 100%;
+      height: 195px;
+  }
+
+  section img {
+      width: 100%;
+  }
+
+  .pdf-item img {
+    width: 80%;
+  }
+
+  .actividades {
+      margin-left: 0;
+      margin-bottom: 20px;
+      padding-left: 0;
+  }
+
+  .form-edades1 .col-md-6, .form-edades .col-md-6 {
+      border-right: none;
+  }
+
+  .video-container {
+      margin: 0 auto;
+  }
+
+  .video-container1 {
+      margin: 40px 0;
+  }
+
+  .pdf-container {
+      flex-direction: column;
+  }
+
+  .pdf-item {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .pdf-item img {
+      max-width: 100%;
+  }
+
+  .download-btn {
+      padding: 10px 15px;
+      font-size: 14px;
+  }
 }

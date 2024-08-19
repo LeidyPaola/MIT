@@ -96,8 +96,8 @@ app.get('/foro', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'foro.html'));
 });
 
-app.get('/tienda', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'tienda.html'));
+app.get('/progreso', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'progreso.html'));
 });
 
 app.get('/hitos', (req, res) => {
@@ -118,6 +118,14 @@ app.get('/actividades-2-3', (req, res) => {
 
 app.get('/actividades-3-5', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'actividades-3-5.html'));
+});
+
+app.get('/guias', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'guias.html'));
+});
+
+app.get('/terapias', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'terapias.html'));
 });
 
 app.get('/', (req, res) => {

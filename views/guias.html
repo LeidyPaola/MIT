@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guías para padres</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/styles-nivel2.css">
+    <link rel="stylesheet" href="css/styles-actividades.css">
+    <link rel="icon" href="/img/logo1.jpg" type="image/jpeg">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <header>
+        <nav class="sidebar">
+            <div class="logo-container">
+                <img src="/img/logo.jpg" alt="Logo" class="logo">
+                <span class="logo-text">Mundo Infantil Terapéutico</span>
+            </div>
+             <!-- Botón de hamburguesa -->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul>
+                <li class="dropdown">
+                    <a href="/home">
+                        <i class="fas fa-home"></i>
+                        <span class="sidebar-item-text">Inicio</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="/hitos">
+                        <i class="fas fa-tasks"></i>
+                        <span class="sidebar-item-text">Hitos</span>
+                    </a>
+                </li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fas fa-book"></i>
+                        <span class="sidebar-item-text">Recursos</span>
+                        <i class="fas fa-caret-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="/terapias"><i class="fas fa-brain"></i>Terapias</a>
+                        <a href="/guias" class="active"><i class="fas fa-file-pdf"></i>Guías</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span class="sidebar-item-text">Actividades</span>
+                        <i class="fas fa-caret-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="/actividades-0-1"><i class="fas fa-baby-carriage"></i>0 a 1 año</a>
+                        <a href="/actividades-1-2"><i class="fas fa-baby"></i>1 a 2 años</a>
+                        <a href="/actividades-2-3"><i class="fas fa-child"></i>2 a 3 años</a>
+                        <a href="/actividades-3-5"><i class="fas fa-child"></i>3 a 5 años</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="/foro">
+                        <i class="fa fa-comments"></i>
+                        <span class="sidebar-item-text">Foro</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="/progreso">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="sidebar-item-text">Progreso de hitos</span>
+                    </a>
+                </li>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar...">
+                    <button class="search-button">
+                        <i class="fas fa-search"></i>
+                      </button>
+                  </div>
+                  
+            </ul>
+            <div class="user-menu">
+                <a href="#" class="user-menu-toggle">
+                    <img src="/img/user-icon.png" alt="User Photo" class="user-photo">
+                    <div class="user-info">
+                        <span class="user-name">Nombre de Usuario</span>
+                        <i class="fas fa-caret-down dropdown-arrow"></i>
+                    </div>
+                </a>
+                <div class="user-menu-dropdown">
+                    <a href="perfil"><i class="fas fa-edit"></i> Editar Perfil</a>
+                    <a href="logout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main>
+
+        <section id="pdfs" class="pdf-download-section">
+            <div class="col-md-10">
+            <h2>Guías para padres</h2>
+            <div class="pdf-container">
+                <div class="pdf-item">
+                    <img src="img/Pautas_de_crianza.jpg" alt="Pautas de crianza para niño(a)s de 0-5 años">
+                    <h3>Pautas de crianza para niño(a)s de 0-5 años</h3>
+                    <p>Descubre las mejores prácticas para el desarrollo saludable y positivo de tu hijo(a) desde el nacimiento hasta los 5 años.</p>
+                    <a href="pdfs/Pautas de crianza.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/Estimulacion_del_lenguaje.jpg" alt="Estimulacion del lenguaje">
+                    <h3>Estimulacion del lenguaje</h3>
+                    <p>Guía informátiva esencial para fomentar el desarrollo del lenguaje en la primera infancia, ayudando a tu hijo(a) a comunicarse eficazmente.</p>
+                    <a href="pdfs/Estimulacion del lenguaje.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/Manual_padres_autismo.jpg" alt="Manual para padres de niños autistas">
+                    <h3>Manual para padres de niños autistas</h3>
+                    <p>Encuentra estrategias y consejos prácticos para apoyar a niños con autismo en su desarrollo integral.</p>
+                    <a href="pdfs/MANUAL PARA PADRES AUTISMO.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/Guia_neurodiversidad.jpg" alt="Guia de neurodiversidad">
+                    <h3>Guia de neurodiversidad</h3>
+                    <p>Aprende a entender y apoya la neurodiversidad en niños, fomentando un ambiente inclusivo y enriquecedor.</p>
+                    <a href="https://www.calameo.com/read/006254915cf19c93ae63d" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/0_a_siempre.jpg" alt="0 a siempre">
+                    <h3>Guia para la Primera Infancia</h3>
+                    <p>Directrices detalladas para la implementación efectiva de políticas de primera infancia a nivel territorial.</p>
+                    <a href="pdfs/cartilla_0_a_siempre.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/desarrollo_infantil.jpg" alt="Desarrollo Infantil">
+                    <h3>Desarrollo infantil (Primera Infancia)</h3>
+                    <p>Conoce las etapas clave del desarrollo infantil y cómo puedes apoyar a tu hijo(a) en cada una de ellas.</p>
+                    <a href="pdfs/desarrollo_infantil.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/guia_autismo_icbf.jpg" alt="Guia de autismo ICBF">
+                    <h3>Guia de autismo ICBF</h3>
+                    <p>Un recurso completo para padres y cuidadores de niños con autismo, brindando herramientas de apoyo y comprensión.</p>
+                    <a href="pdfs/guia_autismo_icbf.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/educacion_inclusiva.jpg" alt="Educacion inclusiva">
+                    <h3>Educacion inclusiva</h3>
+                    <p>Promueve una educación inclusiva y equitativa para todos los niños, adaptando las estrategias educativas a sus necesidades.</p>
+                    <a href="pdfs/Educacion_inclusiva.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/guia_paralisis_cerebral_icbf.jpg" alt="Guia sobre parálisis cerebral ICBF">
+                    <h3>Guia sobre parálisis cerebral ICBF</h3>
+                    <p>Apoyo y orientación para padres de niños con parálisis cerebral, ayudándolos a superar los desafíos del día a día.</p>
+                    <a href="pdfs/guia_paralisis_cerebral_icbf.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/acompañarte_0_a_siempre.jpg" alt="Política de primera infancia">
+                    <h3>Política de primera infancia</h3>
+                    <p>Un documento clave que define las políticas y estrategias para asegurar el bienestar y desarrollo de los niños en la primera infancia.</p>
+                    <a href="pdfs/CARTILLA-1-POLITICA-DE-PRIMERA-INFANCIA.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/guia_metodologica.jpg" alt="Guia metodologica">
+                    <h3>Guía metodológica</h3>
+                    <p>Una guía práctica para implementar metodologías educativas que apoyen el desarrollo integral de los niños.</p>
+                    <a href="pdfs/CARTILLA-GUIA-METODOLOGICA.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/desarrollo_infantil1.jpg" alt="Desarrollo Infantil y participación">
+                    <h3>Desarrollo Infantil y participación</h3>
+                    <p>Fomenta la participación activa de los niños en su proceso de desarrollo con estrategias adecuadas para su edad.</p>
+                    <a href="pdfs/CARTILLA-2-DESARROLLO-INFANTIL-Y-PARTICIPACION.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/juego.jpg" alt="Importancia del juego">
+                    <h3>Importancia del juego</h3>
+                    <p>Explora cómo el juego es esencial para el desarrollo físico, emocional y social de los niños.</p>
+                    <a href="pdfs/CARTILLA-6-JUEGO.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/educacion_inicial.jpg" alt="Guía de educación inicial">
+                    <h3>Guía de educación inicial</h3>
+                    <p>Estrategias educativas para los primeros años de vida, asegurando una base sólida para el aprendizaje futuro.</p>
+                    <a href="pdfs/CARTILLA-3-EDUCACION-INICIAL.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/exploracion_del_medio.jpg" alt="Guía de exploración del medio">
+                    <h3>Guía de exploración del medio</h3>
+                    <p>Fomenta la curiosidad y el descubrimiento en los niños con actividades que los conectan con su entorno.</p>
+                    <a href="pdfs/CARTILLA-7-EXPLORACION-DEL-MEDIO.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/crianza_positiva.jpg" alt="Crianza positiva">
+                    <h3>Crianza positiva</h3>
+                    <p>Técnicas de crianza que promueven un ambiente de amor, respeto y crecimiento emocional para los niños.</p>
+                    <a href="pdfs/CARTILLA-8-CRIANZA-POSITIVA.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/maltrato_infantil.jpg" alt="Maltrato infantil">
+                    <h3>Maltrato infantil</h3>
+                    <p>Identifica, previene y actúa contra el maltrato infantil, protegiendo a los más vulnerables.</p>
+                    <a href="pdfs/CARTILLA-9-MALTRATO-INFANTIL.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/formacion_a_las_familias.jpg" alt="Formación a las familias">
+                    <h3>Formación a las familias</h3>
+                    <p>Apoya a las familias con herramientas y conocimientos para un desarrollo integral de sus hijos.</p>
+                    <a href="pdfs/CARTILLA-10-FORMACION-A-LAS-FAMILIAS-(1).pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/salud_mental.jpg" alt="Salud mental en niños">
+                    <h3>Salud mental en niños</h3>
+                    <p>Consejos y estrategias para cuidar la salud mental de los niños, promoviendo su bienestar emocional.</p>
+                    <a href="pdfs/Descargable_como_cuidar_la_salud_mental_de_ninos_y_adolescentes.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/aventuras_lia.jpg" alt="Las aventuras de Lía">
+                    <h3>Las aventuras de Lía</h3>
+                    <p>Una historia interactiva que fomenta la creatividad y el aprendizaje en los niños a través de las aventuras de Lía.</p>
+                    <a href="pdfs/217_historia_de_lia.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+                <div class="pdf-item">
+                    <img src="img/crianza_con_amor.jpg" alt="Crianza con Amor">
+                    <h3>Crianza con Amor</h3>
+                    <p>Descubre cómo criar a tus hijos con amor, construyendo relaciones basadas en el respeto y la comprensión.</p>
+                    <a href="pdfs/215_Crianza_con_Amor.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        
+    </main>
+   
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Información de Contacto</h2>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Falsa 123, Ciudad, País</li>
+                <li><i class="fas fa-phone-alt"></i> Teléfono: +123 456 7890</li>
+                <li><i class="fas fa-envelope"></i> Email: contacto@mit.com</li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Redes Sociales</h2>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Agrega más iconos según sea necesario -->
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Suscríbete a Nuestro Boletín</h2>
+            <form action="#" method="post">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 MIT. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="js/navbar.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

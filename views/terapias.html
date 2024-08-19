@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapias</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/styles-nivel2.css">
+    <link rel="stylesheet" href="css/styles-actividades.css">
+    <link rel="icon" href="/img/logo1.jpg" type="image/jpeg">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <header>
+        <nav class="sidebar">
+            <div class="logo-container">
+                <img src="/img/logo.jpg" alt="Logo" class="logo">
+                <span class="logo-text">Mundo Infantil Terapéutico</span>
+            </div>
+             <!-- Botón de hamburguesa -->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul>
+                <li class="dropdown">
+                    <a href="/home">
+                        <i class="fas fa-home"></i>
+                        <span class="sidebar-item-text">Inicio</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="/hitos">
+                        <i class="fas fa-tasks"></i>
+                        <span class="sidebar-item-text">Hitos</span>
+                    </a>
+                </li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fas fa-book"></i>
+                        <span class="sidebar-item-text">Recursos</span>
+                        <i class="fas fa-caret-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="/terapias" class="active"><i class="fas fa-brain"></i>Terapias</a>
+                        <a href="/guias"><i class="fas fa-file-pdf"></i>Guías</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span class="sidebar-item-text">Actividades</span>
+                        <i class="fas fa-caret-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="/actividades-0-1"><i class="fas fa-baby-carriage"></i>0 a 1 año</a>
+                        <a href="/actividades-1-2"><i class="fas fa-baby"></i>1 a 2 años</a>
+                        <a href="/actividades-2-3"><i class="fas fa-child"></i>2 a 3 años</a>
+                        <a href="/actividades-3-5"><i class="fas fa-child"></i>3 a 5 años</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="/foro">
+                        <i class="fa fa-comments"></i>
+                        <span class="sidebar-item-text">Foro</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="/progreso">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="sidebar-item-text">Progreso de hitos</span>
+                    </a>
+                </li>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar...">
+                    <button class="search-button">
+                        <i class="fas fa-search"></i>
+                      </button>
+                  </div>
+                  
+            </ul>
+            <div class="user-menu">
+                <a href="#" class="user-menu-toggle">
+                    <img src="/img/user-icon.png" alt="User Photo" class="user-photo">
+                    <div class="user-info">
+                        <span class="user-name">Nombre de Usuario</span>
+                        <i class="fas fa-caret-down dropdown-arrow"></i>
+                    </div>
+                </a>
+                <div class="user-menu-dropdown">
+                    <a href="perfil"><i class="fas fa-edit"></i> Editar Perfil</a>
+                    <a href="logout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main>
+
+        <section id="canciones" class="form-edades">
+            <div class="container">
+                <h2>Terapías para niños</h2>
+                   <!-- TEA -->
+
+                   <div class="row">
+                    <!-- Fila 1 - Video 1 y Texto -->
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/M3dsE7wn84k?si=sdXsGbwL1gEUcptw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            <h3>¿Cómo ayudar a un niño con autismo en casa? por el Dr. Pérez | IMED Levante</h3>
+                            <h5>Este video ofrece consejos y estrategias para apoyar a un niño con autismo en el hogar, presentados por el Dr. Pérez, para mejorar su bienestar y desarrollo.</h5>
+                            <p>Actividades para hacer con niños TEA
+                            <a href="pdfs/Cuaderno-de-actividades-alumnado-TEA-VOL-2.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                
+                
+                    <!-- Fila 1 - Video 2 y Texto -->
+                    <div class="col-md-6">
+                        <div class="video-container"> 
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/SdUL6_dc3So?si=Iqw47CNv9_ufmNIW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            <h3>¿Cómo puedo MEJORAR la COMUNICACIÓN con niños con TEA? Consejos sobre PICTOGRAMAS.</h3>
+                            <h5>Este video proporciona consejos sobre cómo mejorar la comunicación con niños con autismo utilizando pictogramas, una herramienta efectiva para apoyar la comprensión y expresión.</h5>
+                            <p>Pictogramas de escuela
+                            <a href="pdfs/PICTOGRAMAS-ESCUELA.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                            <p>Pictogramas de higiene personal
+                                <a href="pdfs/pictogramas-higiene-personal.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                                </p>
+                            <p>Pictogramas de autonomia
+                            <a href="pdfs/PICTOGRAMAS-AUTONOMIA-DE-TRABAJO-1.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+
+                    <!-- Fila 1 - Video 1 y Texto -->
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/hGjbVbDezhY?si=TJQIlTZk9KQ8P8eV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            <h3>Actividades sencillas y juegos de estimulación para niños con TEA | Trastorno del Espectro Autista</h3>
+                            <h5>Este video presenta actividades y juegos sencillos que estimulan y apoyan el desarrollo de niños con Trastorno del Espectro Autista (TEA), ayudándolos a interactuar y aprender de manera efectiva.</h5>
+                            <p>Guía para el juego con niños TEA
+                            <a href="pdfs/yo_tambien_juego_teapuntas_optimizado.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                
+                
+                    <!-- Fila 1 - Video 2 y Texto -->
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fBZ-vdreD28?si=eduPrjpTndHJFlYi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            <h3>15 ACTIVIDADES para NIÑOS con AUTISMO en el aula 🧒🏻🧩 (Trastorno del Espectro Autista)</h3>
+                            <h5>Este video propone 15 actividades diseñadas específicamente para niños con autismo en el aula, con el objetivo de mejorar su participación y aprendizaje en un entorno educativo.</h5>
+                            <p>Actividades TEA
+                            <a href="pdfs/El-Manual-de-Actividades-para-el-Autismo-Actividades-para-ayudar-a-los-ninos-a-comunicarse-pdf.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- TDHA -->
+                <div class="row">
+                    <!-- Fila 1 - Video 1 y Texto -->
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RbCDNc9yd6I?si=ZWyOZnLBd85RU_8m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            <h3>20 Estrategias Prácticas para Niños con TDAH en Casa y en la Escuela</h3>
+                            <h5>Este video ofrece una serie de estrategias y consejos útiles para ayudar a niños con Trastorno de Déficit de Atención e Hiperactividad (TDAH) a desenvolverse mejor tanto en el hogar como en el entorno escolar.</h5>
+                            <p>Recompensas
+                            <a href="pdfs/recompensas.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                            <p>Rutina
+                            <a href="pdfs/Mi Rutina.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                
+                
+                    <!-- Fila 1 - Video 2 y Texto -->
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fsc5O6Y7Etc?si=v9C7uKgS1kl8CfNy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            <h3>15 Actividades para Niños con Déficit de Atención (TDAH)</h3>
+                            <h5>Este video presenta una variedad de actividades diseñadas específicamente para ayudar a niños con Trastorno de Déficit de Atención e Hiperactividad (TDAH) a mejorar su concentración, autocontrol y habilidades sociales de manera divertida y efectiva.</h5>
+                            <p>Diferencias
+                            <a href="pdfs/diferencias.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                            <p>Actividades laberintos y sopas de letras
+                            <a href="pdfs/Actividades.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+
+                    <!-- Fila 1 - Video 1 y Texto -->
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/POwLR91PPV0?si=udcoHKXhxH7-B_DB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            <h3>🥦 ¿Qué ALIMENTACIÓN debe llevar un NIÑO con TDAH? - 7 Pautas OBLIGATORIAS</h3>
+                            <h5>Este video explica las pautas alimenticias que pueden ayudar a mejorar la concentración y el comportamiento de los niños con Trastorno de Déficit de Atención e Hiperactividad (TDAH), proporcionando consejos prácticos sobre la nutrición adecuada.</h5>
+                            <p>Alimentación y tareas domésticas.
+                            <a href="pdfs/alimentacion y tareas domesticas.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                
+                
+                    <!-- Fila 1 - Video 2 y Texto -->
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qrp_VSy-WN4?si=Nq0BiYQd0goxYzie" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            <h3>TDAH 101: Por qué los padres necesitan estrategias diferentes para los niños con TDAH</h3>
+                            <h5>Este video aborda la importancia de adaptar las estrategias de crianza y enseñanza para niños con Trastorno de Déficit de Atención e Hiperactividad (TDAH), ofreciendo enfoques que pueden mejorar su desarrollo y bienestar.</h5>
+                            <p>Estrategias para tener en cuenta con los niños TDAH.
+                            <a href="pdfs/estrategias-tdha.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                
+                 
+                    
+                    <!-- Dislexia -->
+
+                <div class="row">
+                    <!-- Fila 1 - Video 1 y Texto -->
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/D7ILCYCPpRM?si=SdIhQi7zoaA78Vi7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            <h3>La dislexia en niños, ¿tiene solución? | Ejercicios para detectar y tratar la dislexia infantil</h3>
+                            <h5>Este video ofrece una explicación detallada sobre la dislexia en niños, incluyendo ejercicios prácticos para detectarla y tratarla de manera efectiva, ayudando a mejorar sus habilidades de lectura y escritura.</h5>
+                            <p>Cuadernillo para la dislexia
+                            <a href="pdfs/CUADERNO-DISLEXIA.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                
+                
+                    <!-- Fila 1 - Video 2 y Texto -->
+                    <div class="col-md-6">
+                        <div class="video-container"> 
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VcOxvcl1yxw?si=IpPE65ayaOlNB2US" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            <h3>10 ACTIVIDADES para NIÑOS con DISLEXIA 🧒🏻📝 | Problemas de Aprendizaje en Niños</h3>
+                            <h5>Este video presenta 10 actividades diseñadas para niños con dislexia, enfocándose en mejorar sus habilidades de aprendizaje de manera divertida y adaptada a sus necesidades.</h5>
+                            <p>Cuadernillo de dislexia
+                            <a href="pdfs/Cuadernillo de dislexia.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+
+                    <!-- Fila 1 - Video 1 y Texto -->
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TpnxD8objKU?si=QmBpTQGlu8hM6-wb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            <h3>Actividades para trabajar DISLEXIA en Niños</h3>
+                            <h5>Este video proporciona una serie de actividades específicas para trabajar con niños que tienen dislexia, ayudándoles a superar las dificultades de lectura y escritura a través de ejercicios prácticos y efectivos.</h5>
+                            <p>Actividades para la dislexia
+                                <a href="pdfs/LE0003-cuaderno-dislexia-edufichas.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                            <p>Actividades para la dislexia-2
+                                <a href="pdfs/LE0005-dislexia-pdf-cuaderno2.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                
+                
+                    <!-- Fila 1 - Video 2 y Texto -->
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TjcRGoEAIPg?si=QuTP_NWzSYCspovR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            <h3>Como ayudar a los niños con dislexia, ejercicios efectivos - Problemas de aprendizaje</h3>
+                            <h5>Este video ofrece ejercicios efectivos y consejos prácticos para ayudar a los niños con dislexia a superar los desafíos de aprendizaje, mejorando sus habilidades de manera gradual y sostenida.</h5>
+                            <p>Mini-retos para la lateralidad
+                            <a href="pdfs/mini-retos.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+     
+                    <!-- TEL -->
+
+                    <div class="row">
+                        <!-- Fila 1 - Video 1 y Texto -->
+                        <div class="col-md-6">
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6XSTy2OOHl4?si=O03KYaSZjjPBv-xD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                                <h3>Trastorno Específico del Lenguaje y escolaridad</h3>
+                                <h5>Este video explora cómo el Trastorno Específico del Lenguaje (TEL) afecta la escolaridad de los niños, proporcionando información sobre las dificultades que enfrentan y estrategias para apoyarlos en el entorno educativo.</h5>
+                                <p>Actividades para el TEL
+                                <a href="pdfs/tel-aspectos-y-actividades-a-trabajar.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    
+                    
+                        <!-- Fila 1 - Video 2 y Texto -->
+                        <div class="col-md-6">
+                            <div class="video-container"> 
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/GiFq_RCCWG8?si=5trFi_P89LYdMyxG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                                <h3>Recomendaciones para padres de niños con T.E.L. Dra Verónica Maggio.</h3>
+                                <h5>Este video ofrece recomendaciones valiosas para padres de niños con TEL, presentadas por la Dra. Verónica Maggio, con consejos prácticos para mejorar la comunicación y el desarrollo del lenguaje en el hogar.</h5>
+                                <p>Actividades para el TEL
+                                <a href="pdfs/actividades lenguaje.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row">
+    
+                        <!-- Fila 1 - Video 1 y Texto -->
+                        <div class="col-md-6">
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/QCywO8Ll_lI?si=KDi2Ys7QmgiXwiNT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                                <h3>Trastorno del Desarrollo del Lenguaje ¿qué es eso? l Resuelvo tus dudas l Mi terapia con Ximena</h3>
+                                <h5>Este video responde a las preguntas más comunes sobre el Trastorno del Desarrollo del Lenguaje (TDL), aclarando conceptos y ofreciendo sugerencias para el manejo adecuado de este trastorno en niños.</h5>
+                                <p>Actividades para estimular el lenguaje
+                                    <a href="pdfs/Cuaderno actividades para estimular el lenguaje Red Cenit.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    
+                    
+                        <!-- Fila 1 - Video 2 y Texto -->
+                        <div class="col-md-6">
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/CEqpQzaY-Yw?si=QhYS4ngiutbHrXuO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                                <h3>Actividades para niños con TEL expresivo</h3>
+                                <h5>Este video presenta una serie de actividades específicas diseñadas para niños con TEL expresivo, enfocadas en mejorar sus habilidades de expresión y comunicación de manera efectiva y gradual.</h5>
+                                <p>Guía para padres TEL
+                                <a href="pdfs/guia_padres_tel.pdf" class="download-btn" download>Descargar <i class="fas fa-download"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </section>
+                        
+                    
+        
+    
+    </main>
+        
+        
+    </main>
+   
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Información de Contacto</h2>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Falsa 123, Ciudad, País</li>
+                <li><i class="fas fa-phone-alt"></i> Teléfono: +123 456 7890</li>
+                <li><i class="fas fa-envelope"></i> Email: contacto@mit.com</li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Redes Sociales</h2>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Agrega más iconos según sea necesario -->
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h2>Suscríbete a Nuestro Boletín</h2>
+            <form action="#" method="post">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 MIT. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="js/navbar.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -24,7 +24,7 @@ body {
 
 }
 
-.sidebar .active a {
+.sidebar .active {
   background-color: #1699ea;
 }
 .sidebar:hover {
