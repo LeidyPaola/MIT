@@ -100,6 +100,10 @@ app.get('/progreso', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'progreso.html'));
 });
 
+app.get('/perfil', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'perfil.html'));
+});
+
 app.get('/hitos', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'hitos.html'));
 });

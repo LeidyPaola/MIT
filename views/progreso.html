@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progreso</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/styles-nivel2.css">
+    <link rel="icon" href="/img/logo1.jpg" type="image/jpeg">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="sidebar">
+            <div class="logo-container">
+                <img src="/img/logo.jpg" alt="Logo" class="logo">
+                <span class="logo-text">Mundo Infantil Terapéutico</span>
+            </div>
+             <!-- Botón de hamburguesa -->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul>
+                <li class="dropdown">
+                    <a href="/home">
+                        <i class="fas fa-home"></i>
+                        <span class="sidebar-item-text">Inicio</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="/hitos">
+                        <i class="fas fa-tasks"></i>
+                        <span class="sidebar-item-text">Hitos</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fas fa-book"></i>
+                        <span class="sidebar-item-text">Recursos</span>
+                        <i class="fas fa-caret-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="/terapias"><i class="fas fa-brain"></i>Terapias</a>
+                        <a href="/guias"><i class="fas fa-file-pdf"></i>Guías</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span class="sidebar-item-text">Actividades</span>
+                        <i class="fas fa-caret-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="/actividades-0-1"><i class="fas fa-baby-carriage"></i>0 a 1 año</a>
+                        <a href="/actividades-1-2"><i class="fas fa-baby"></i>1 a 2 años</a>
+                        <a href="/actividades-2-3"><i class="fas fa-child"></i>2 a 3 años</a>
+                        <a href="/actividades-3-5"><i class="fas fa-child"></i>3 a 5 años</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="/foro">
+                        <i class="fa fa-comments"></i>
+                        <span class="sidebar-item-text">Foro</span>
+                    </a>
+                </li>
+                <li class="dropdown active">
+                    <a href="/progreso">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="sidebar-item-text">Progreso de hitos</span>
+                    </a>
+                </li>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar...">
+                    <button class="search-button">
+                        <i class="fas fa-search"></i>
+                      </button>
+                  </div>
+                  
+            </ul>
+            <div class="user-menu">
+                <a href="#" class="user-menu-toggle">
+                    <img src="/img/user-icon.png" alt="User Photo" class="user-photo">
+                    <div class="user-info">
+                        <span class="user-name">Nombre de Usuario</span>
+                        <i class="fas fa-caret-down dropdown-arrow"></i>
+                    </div>
+                </a>
+                <div class="user-menu-dropdown">
+                    <a href="/perfil"><i class="fas fa-edit"></i> Editar Perfil</a>
+                    <a href="logout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+             
+
+    <main>
+    <section id="edades" class="form-edades">        <div class="container">
+        <div class="row justify-content-center">
+        <div class="col-md-6">
+    <!-- Formulario para editar el perfil de usuario -->
+    <h2 style="color: white">Editar Perfil de Usuario</h2>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" >
+                            <div class="form-group">
+                                <label>Nombre de Usuario</label>
+                                <input type="text" name="new_username" class="form-control" value="<?php echo $username; ?>" placeholder="<?php echo $username; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label>Contraseña Actual</label>
+                                <input type="password" name="password_old" class="form-control" placeholder="Contraseña Actual" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Nueva Contraseña</label>
+                                <input type="password" name="password_new" class="form-control" placeholder="Nueva Contraseña">
+                            </div>
+                            <?php if (!empty($error_message)) : ?>
+                                <div class="alert alert-danger" role="alert">
+                                    <?php echo $error_message; ?>
+                                </div>
+                            <?php endif; ?>
+                            
+                            <div style="text-align: center;">
+                            <button type="submit" name="guardarCambiosPerfil" class="btn btn-sucess btn-primary" >Guardar Cambios</button>
+                            <button type="button" class="btn btn-secondary" onclick="goBack()">Atrás</button>
+
+                            </div>
+                        </form>    
+
+    </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <section id="foto-perfil" class="foto-perfil">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="table-responsive">
+                <!-- Tabla para mostrar los niños asociados al usuario -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre del niño(a)</th>
+                            <th>Género</th>
+                            <th>Fecha de Nacimiento</th>
+                            <th>Edad</th>
+                            <th>Condición</th>
+                            <th>Parentesco</th>
+                            <th>Foto de Perfil</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php while ($row_child = $result_children->fetch_assoc()) : ?>
+                            <tr>
+                                <td class="text-wrap"><?php echo $row_child['nombre_hijo']; ?></td>
+                                <td class="text-wrap"><?php echo $row_child['genero']; ?></td>
+                                <td class="text-wrap"><?php echo $row_child['fecha_nacimiento']; ?></td>
+                                <td class="text-wrap"><?php echo $row_child['edad']; ?></td>
+                                <td class="text-wrap"><?php echo $row_child['condicion']; ?></td>
+                                <td class="text-wrap"><?php echo $row_child['parentesco']; ?></td>
+                                <td class="text-wrap">
+                                    <div class="foto-container">
+                                        <img src="<?php echo $row_child['foto_perfil']; ?>" alt="Foto de Perfil" class="foto-profile">
+                                    </div>
+                                </td>
+                                <td class="text-wrap">
+    <div class="btn-group">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" style="display: inline-block;">
+            <!-- Botón para editar el perfil del niño -->
+            <button type="button" class="btn btn-primary btn-editar-nino" data-toggle="modal" data-target="#editarPerfilModal" data-id="<?php echo $row_child['id']; ?>" data-nombre="<?php echo $row_child['nombre_hijo']; ?>">Editar</button>
+        </form>
+
+        <!-- Formulario para eliminar el perfil del niño -->
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" style="display: inline-block;">
+            <input type="hidden" name="id_nino_delete" value="<?php echo $row_child['id']; ?>">
+            <button type="submit" class="btn btn-danger" name="eliminar_nino" >Eliminar</button>
+        </form>
+
+        <!-- Botón para ir al perfil del niño -->
+        <form action="perfil_nino.php" method="POST" style="display: inline-block;">
+            <input type="hidden" name="id_nino_perfil" value="<?php echo $row_child['id']; ?>">
+            <button type="submit" class="btn btn-info" name="ver_perfil_nino">Ver Perfil</button>
+        </form>
+    </div>
+</td>
+
+                            </tr>
+                        <?php endwhile; ?>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para editar el perfil del niño -->
+    <div class="modal fade" id="editarPerfilModal" tabindex="-1" role="dialog" aria-labelledby="editarPerfilModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editarPerfilModalLabel">Editar Perfil de Niño</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Agregar un div para mostrar el mensaje de error -->
+                    <div id="error-message" class="alert alert-danger <?php echo !empty($error_message) ? 'd-block' : 'd-none'; ?>">
+                        <?php echo $error_message; ?>
+                    </div>
+                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="nombre_hijo_edit">Nombre del Niño(a)</label>
+                            <input type="text" class="form-control" id="nombre_hijo_edit" name="nombre_hijo_edit" value="<?php echo isset($_POST['nombre_hijo_edit']) ? $_POST['nombre_hijo_edit'] : ''; ?>" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="foto_perfil_edit">Foto de Perfil</label>
+                            <input type="file" class="form-control-file" id="foto_perfil_edit" name="foto_perfil_edit">
+                        </div>
+                        <input type="hidden" id="id_nino_edit" name="id_nino_edit">
+                        <div class="form-group ">
+                            <label>Contraseña</label>
+                            <input type="password" name="password_confirm" class="form-control" placeholder="Contraseña para confirmar la edición" required>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary" name="guardar_cambios_nino">Guardar Cambios</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <section id="usuario" class="agregar-container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <!-- Botón para agregar un nuevo niño -->
+                <div class="form-group">
+                    <label class="text-white">Agregar niño/a</label><br>
+                    <!-- Imagen del botón -->
+                    <a href="registrar_niños.php" class="d-inline-block">
+                        <img src="img/agregar.jpg" width="60" height="50" alt="Agregar Niño" class="add-child-btn">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Información de Contacto</h2>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Falsa 123, Ciudad, País</li>
+                    <li><i class="fas fa-phone-alt"></i> Teléfono: +123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> Email: contacto@mit.com</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h2>Redes Sociales</h2>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <!-- Agrega más iconos según sea necesario -->
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h2>Suscríbete a Nuestro Boletín</h2>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 MIT. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="js/navbar.js"></script>
+      
+      
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+    
