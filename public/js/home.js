@@ -1,21 +1,48 @@
-// Función para obtener el nombre del usuario autenticado y actualizar el header
-async function loadUserInfo() {
+async function autenticarUsuario(username, password) {
     try {
-        const response = await fetch('/api/user-info', {
-            method: 'GET',
-            credentials: 'include' // Asegura que las cookies de sesión se envíen
-        });
-
-        if (response.ok) {
-            const data = await response.json();
-            document.getElementById('username').textContent = data.name;
-        } else {
-            console.error('Error al obtener la información del usuario.');
-        }
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username, password })
+      });
+      const data = await response.json();
+      const token = data.token;
+      // Guardar el token en la sesión
+      sessionStorage.setItem('token', token);
+      return token;
     } catch (error) {
-        console.error('Error en la solicitud:', error);
+      console.error(error);
     }
-}
+  }
 
-// Cargar la información del usuario al cargar la página
-loadUserInfo();
+
+  async function obtenerUsuario() {
+    try {
+      const token = sessionStorage.getItem('token');
+      if (!token) {
+        console.error('No se encontró el token de autenticación');
+        return;
+      }
+      const response = await fetch('/api/user', {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+      const data = await response.json();
+      const userName = data.name;
+      document.getElementById('user-name').textContent = userName;
+      // Guardar la información del usuario en la sesión
+      sessionStorage.setItem('user', JSON.stringify(data));
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  const user = JSON.parse(sessionStorage.getItem('user'));
+if (user) {
+  document.getElementById('user-name').textContent = user.name;
+} else {
+  console.error('No se encontró el usuario en la sesión');
+}

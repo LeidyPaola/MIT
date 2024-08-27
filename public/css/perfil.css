@@ -1,0 +1,30 @@
+.profile-section {
+    padding: 20px;
+}
+
+.table-section {
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.foto-profile {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.add-child {
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
