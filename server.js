@@ -230,7 +230,13 @@ app.listen(port, () => {
 });
 
 
-
+function isAuthenticated(req, res, next) {
+  if (req.session.user) {
+    return next();
+  } else {
+    res.redirect('/login');
+  }
+}
 
 // Rutas para páginas estáticas
 app.get('/acerca', (req, res) => {
@@ -245,7 +251,8 @@ app.get('/funcionamiento', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'funcionamiento.html'));
 });
 
-app.get('/home', (req, res) => {
+// Usar el middleware en las rutas protegidas
+app.get('/home', isAuthenticated, (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'home.html'));
 });
 

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/styles-nivel2.css">
     <link rel="icon" href="/img/logo1.jpg" type="image/jpeg">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.youtube.com https://www.tiktok.com; frame-src https://www.youtube.com https://www.tiktok.com;">
+
 </head>
 <body>
     <header>
@@ -83,11 +85,11 @@
             </ul>
             <div class="user-menu">
                 <a href="#" class="user-menu-toggle">
-                    <img src="/img/user-icon.png" alt="User Photo" class="user-photo">
-                    <div class="user-info">
-                        <span class="user-name">Nombre de Usuario</span>
-                        <i class="fas fa-caret-down dropdown-arrow"></i>
-                    </div>
+                  <img src="/img/user-icon.png" alt="User Photo" class="user-photo">
+                  <div class="user-info">
+                    <span id="user-name"></span>
+                    <i class="fas fa-caret-down dropdown-arrow"></i>
+                  </div>
                 </a>
                 <div class="user-menu-dropdown">
                     <a href="perfil"><i class="fas fa-edit"></i> Editar Perfil</a>
@@ -108,7 +110,8 @@
                         <!-- Columna 1 -->
                         <div class="col-md-6">
                             <div class="video-container">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QdknQCp6KPA?si=D9tN-KOPCplu_bu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QdknQCp6KPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
                                 <h3>Estimulación de Lenguaje de 0 a 6 meses</h3>
                             </div>
                             
@@ -318,6 +321,8 @@
 </footer>
 
 <script src="js/navbar.js"></script>
+<script src="js/home.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
